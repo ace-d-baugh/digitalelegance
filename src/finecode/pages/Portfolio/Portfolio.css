@@ -1,0 +1,39 @@
+/* pages/Portfolio/Portfolio.css */
+
+.Portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+    padding: 12px;
+}
+
+.Portfolio h1 {
+    text-align: center;
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.Portfolio .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+    padding: 12px;
+}
+
+.Portfolio .project h2 {
+    text-align: center;
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.Portfolio .project p {
+    text-align: center;
+}

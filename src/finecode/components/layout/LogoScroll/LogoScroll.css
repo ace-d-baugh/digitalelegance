@@ -1,0 +1,42 @@
+/* components/LogoScroll/LogoScroll.css */
+
+.LogoScroll {
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    margin: 0 auto;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    animation: scroll 10s linear infinite;
+    will-change: transform; /* Optimize animation performance */
+}
+
+.logos:hover {
+    animation-play-state: paused;
+}
+
+.logos img {
+    margin: 0 20px;
+    flex-shrink: 0;
+    height: 50px;
+}
+
+/* Seamless scroll animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% + 335px));
+    }
+}

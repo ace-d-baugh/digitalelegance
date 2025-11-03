@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "quote": "Ace was great, taking care of our needs. His vast knowledge and experience made our experience truly special.",
+        "name": "Ki Lee",
+        "imageUrl": "/src/assets/images/testimonials/ki.jpg"
+    },
+    {
+        "id": 2,
+        "quote": "Ace was amazing!  He had such a wonderful personality and was a great fit for our group.",
+        "name": "Heather Kromer",
+        "imageUrl": "/src/assets/images/testimonials/heather.jpg"
+    },
+    {
+        "id": 3,
+        "quote": "Ace was just fantastic. We will ALWAYS request him moving forward. Just fantastic.",
+        "name": "Cristian Ossa",
+        "imageUrl": "/src/assets/images/testimonials/cristian.jpg"
+    },
+    {
+        "id": 4,
+        "quote": "Good communication, efficient use of time. Very kind and knowledgeable.",
+        "name": "Katie Clayton",
+        "imageUrl": "/src/assets/images/testimonials/katie.jpg"
+    },
+    {
+        "id": 5,
+        "quote": "I would recommend Ace to anyone!",
+        "name": "Michael Koenke",
+        "imageUrl": "/src/assets/images/testimonials/michael.jpg"
+    },
+    {
+        "id": 6,
+        "quote": "Clearly goes above and beyond in his work and does his best. Thank you for all that you do!!",
+        "name": "Katarina Bleier",
+        "imageUrl": "/src/assets/images/testimonials/katerina.jpg"
+    },
+    {
+        "id": 7,
+        "quote": "",
+        "name": "",
+        "imageUrl": "/src/assets/images/testimonials/"
+    },
+    {
+        "id": 8,
+        "quote": "",
+        "name": "",
+        "imageUrl": "/src/assets/images/testimonials/"
+    }
+]

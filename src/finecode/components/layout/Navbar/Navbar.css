@@ -1,0 +1,16 @@
+/* components/Navbar/Navbar.css */
+
+header-component {
+	height: var(--header-height);
+}
+
+.navbar a {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+li a:hover,
+li a:hover i,
+li a:hover span {
+	color: var(--color-accent);
+}

@@ -1,0 +1,24 @@
+/* components/Card/Card.css */
+
+.Card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.Card .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: var(--font-emphasis);
+    text-align: center;
+}
+
+.Card .description {
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    text-wrap: wrap;
+}

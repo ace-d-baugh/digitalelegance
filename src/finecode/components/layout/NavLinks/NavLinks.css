@@ -1,0 +1,25 @@
+/* components/NavLinks/NavLinks.css */
+
+.navbar-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.navbar-links li {
+	margin: 0 .5rem;
+}
+
+.navbar-links li Link i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Show the hamburger menu on smaller screens */
+@media (min-width: 769px) {
+	.navbar-links {
+		display: flex;
+	}
+}

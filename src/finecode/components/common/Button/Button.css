@@ -1,0 +1,14 @@
+/* components/Button/Button.css */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+    padding: 1.25rem;
+}
+
+.btn-container a:hover {
+    color: var(--color-accent);
+}

@@ -1,0 +1,480 @@
+[
+    {
+        "id": 1,
+        "title": "Drag n Drop Selector",
+        "shortDescription": "A dynamic Angular-based tool enabling users to select and save schedule preferences through an intuitive drag-and-drop interface.",
+        "longDescription": {
+            "issue": "The previous dropdown-based component was cumbersome and lacked user-friendly interaction for managing schedule preferences.",
+            "solution": "Developed a full-stack solution with an Angular frontend, Node.js/Express backend, and SQL database, implementing a custom drag-and-drop component that allows users to filter, highlight, and transfer multiple options efficiently. This tool is actively used by thousands of employees at a Fortune 100 company to streamline schedule management.",
+            "lessonsLearned": "Gained expertise in optimizing API performance for large-scale applications and integrating custom components into existing enterprise systems, ensuring scalability and maintainability.",
+            "extraInfo": ""
+        },
+        "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/ta-01.png",
+            "/src/assets/images/projects/ta-02.png",
+            "/src/assets/images/projects/ta-03.png",
+            "/src/assets/images/projects/ta-04.png",
+            "/src/assets/images/projects/ta-05.png",
+            "/src/assets/images/projects/ta-06.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/TA-Projects",
+        "liveUrl": "https://ace-d-baugh.github.io/TA-Projects/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 2,
+        "title": "YelpCamp",
+        "shortDescription": "A MERN-stack application for discovering, saving, and reviewing campsites with a user-friendly interface.",
+        "longDescription": {
+            "issue": "Users struggled to find and review campsites due to limited specialized platforms compared to general business review sites like Yelp.",
+            "solution": "Engineered a full-stack web application using React, Node.js, Express, and MongoDB, featuring a responsive frontend and robust backend to enable users to create accounts, save campsites, and submit reviews seamlessly.",
+            "lessonsLearned": "Mastered the MERN stack, focusing on integrating React for dynamic UIs, Express for efficient API routing, MongoDB for scalable data storage, and Bootstrap for responsive design.",
+            "extraInfo": "You may create a free account on the website to test the application."
+        },
+        "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/yelp-01.png",
+            "/src/assets/images/projects/yelp-02.png",
+            "/src/assets/images/projects/yelp-03.png",
+            "/src/assets/images/projects/yelp-04.png"
+        ],
+        "codeUrl": "https://github.com/acieffe/Udemy-YelpCamp",
+        "liveUrl": "https://acieffe-yelp-camp.onrender.com/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 3,
+        "title": "Bob's Computer Repair",
+        "shortDescription": "A MEAN-stack e-commerce platform for a computer repair shop with secure payment processing.",
+        "longDescription": {
+            "issue": "The client required a cost-effective, scalable online store with a shopping cart and secure payment integration for their computer repair services.",
+            "solution": "Led a team of three developers to build a full-stack e-commerce platform using Angular, Node.js, Express, and MongoDB, incorporating Stripe for secure payments and designing a user-centric interface with Bootstrap for responsiveness.",
+            "lessonsLearned": "Developed proficiency in the MEAN stack, applied waterfall methodology for project management, and emphasized rigorous testing to ensure a reliable user experience.",
+            "extraInfo": "Demo credentials: Standard User > username: [mozart], password: [Password01] | Admin User > username: [bach], password: [Password01]"
+        },
+        "technologies": ["Angular", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs-01.png",
+            "/src/assets/images/projects/bcrs-02.png",
+            "/src/assets/images/projects/bcrs-03.png",
+            "/src/assets/images/projects/bcrs-04.png",
+            "/src/assets/images/projects/bcrs-05.png",
+            "/src/assets/images/projects/bcrs-06.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/gryffindor-bcrs",
+        "liveUrl": "https://gryffindor-bcrs.onrender.com/#/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 4,
+        "title": "Contact Pro",
+        "shortDescription": "A .NET-based web application for managing contacts with create, edit, and delete functionalities.",
+        "longDescription": {
+            "issue": "Users needed an efficient, secure platform to organize and manage contact information with full CRUD capabilities.",
+            "solution": "Developed a full-stack application using .NET Core for the backend, paired with a responsive frontend built with Bootstrap and CSS, enabling seamless contact management with a focus on scalability and user experience.",
+            "lessonsLearned": "Acquired expertise in .NET Core for robust backend development, enhanced skills in responsive design with Bootstrap, and deepened understanding of secure data handling practices.",
+            "extraInfo": "This application is currently being updated and is not available for public use."
+        },
+        "technologies": ["C#", ".NET Core", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
+        "liveUrl": "#",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 5,
+        "title": "NodeBucket",
+        "shortDescription": "A MEAN-stack to-do application for managing class assignments with AI-generated visuals.",
+        "longDescription": {
+            "issue": "Students needed a simple, intuitive tool to track and manage class assignments efficiently.",
+            "solution": "Developed a full-stack to-do application using Angular, Node.js, Express, and MongoDB, integrating AI-generated imagery for enhanced visual appeal and implementing comprehensive testing for reliability.",
+            "lessonsLearned": "Strengthened expertise in the MEAN stack, explored AI-driven image generation for UI enhancement, and reinforced the importance of thorough testing in application development.",
+            "extraInfo": "Demo credentials: Usernames: 1007, 1008, 1009, 1010, 1011, 1012"
+        },
+        "technologies": ["Angular", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/node-01.png",
+            "/src/assets/images/projects/node-02.png",
+            "/src/assets/images/projects/node-03.png",
+            "/src/assets/images/projects/node-04.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/nodebucket",
+        "liveUrl": "https://baugh-nodebucket.onrender.com/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 6,
+        "title": "Teams Tracker",
+        "shortDescription": "An Angular-based frontend app for managing Microsoft Teams members with drag-and-drop functionality.",
+        "longDescription": {
+            "issue": "Microsoft Teams lacked native functionality to reorganize participants during meetings, unlike competitors such as Zoom.",
+            "solution": "Designed and developed an Angular-based frontend application with drag-and-drop functionality to enable dynamic tracking and reorganization of Teams members, adopted by a Fortune 100 company for daily stand-up meetings.",
+            "lessonsLearned": "Mastered Angular for building interactive UIs, advanced drag-and-drop mechanics, and applied CSS for polished, responsive designs tailored to enterprise needs.",
+            "extraInfo": ""
+        },
+        "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/team-01.png",
+            "/src/assets/images/projects/team-02.png",
+            "/src/assets/images/projects/team-03.png",
+            "/src/assets/images/projects/team-04.png",
+            "/src/assets/images/projects/team-05.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/teams-stand-up-tracker",
+        "liveUrl": "https://ace-d-baugh.github.io/teams-stand-up-tracker/",
+        "type": "Front-End"
+    },
+    {
+        "id": 7,
+        "title": "CSS Animations",
+        "shortDescription": "A collection of engaging CSS and JavaScript animations showcasing creative visual effects.",
+        "longDescription": {
+            "issue": "Needed a platform to experiment with and demonstrate advanced CSS and JavaScript animation techniques.",
+            "solution": "Created a curated set of responsive animations using CSS and JavaScript, designed to enhance user engagement and showcase technical proficiency in frontend development.",
+            "lessonsLearned": "Deepened expertise in CSS animations, JavaScript for dynamic effects, and cross-browser compatibility to ensure consistent performance.",
+            "extraInfo": ""
+        },
+        "technologies": ["CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/animate-02.png",
+            "/src/assets/images/projects/animate-03.png",
+            "/src/assets/images/projects/animate-04.png",
+            "/src/assets/images/projects/animate-05.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/Animations",
+        "liveUrl": "https://ace-d-baugh.github.io/Animations/",
+        "type": "Front-End"
+    },
+    {
+        "id": 8,
+        "title": "Digital Elegance",
+        "shortDescription": "A React-based portfolio website showcasing professional skills and photographic artwork.",
+        "longDescription": {
+            "issue": "Required a modern, visually appealing platform to display web development projects and sell photographic artwork online.",
+            "solution": "Developed a responsive React-based portfolio with Bootstrap for styling, integrated with a WordPress and WooCommerce backend to showcase and sell photographic artwork, ensuring a seamless user experience across devices.",
+            "lessonsLearned": "Enhanced proficiency in React for dynamic interfaces, WordPress/WooCommerce for e-commerce integration, and applied UX/UI principles to create an engaging portfolio.",
+            "extraInfo": ""
+        },
+        "technologies": ["React", "Bootstrap", "CSS", "WordPress", "WooCommerce"],
+        "imageUrls": [
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/DigitalElegance",
+        "liveUrl": "https://digitalelegance.com",
+        "type": "Front-End"
+    },
+    {
+        "id": 9,
+        "title": "Lizvitation",
+        "shortDescription": "A personalized Harry Potter-themed wedding invitation with dynamic URL-based customization.",
+        "longDescription": {
+            "issue": "Required a unique, interactive wedding invitation tailored to each guest with a Harry Potter theme.",
+            "solution": "Built a JavaScript-based frontend application that dynamically customizes invitations using URL parameters, enhanced with Adobe Photoshop for themed backgrounds and animated SVG footprints for an immersive experience.",
+            "lessonsLearned": "Advanced skills in JavaScript for dynamic content generation, CSS for animations, and Photoshop for creating high-quality visual assets tailored to client specifications.",
+            "extraInfo": ""
+        },
+        "technologies": ["JavaScript", "CSS", "Photoshop"],
+        "imageUrls": [
+            "/src/assets/images/projects/liz-01.png",
+            "/src/assets/images/projects/liz-02.png",
+            "/src/assets/images/projects/liz-03.png",
+            "/src/assets/images/projects/liz-04.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
+        "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",
+        "type": "Front-End"
+    },
+    {
+        "id": 10,
+        "title": "Loan App",
+        "shortDescription": "A TypeScript Angular application for calculating loan payments with a sleek, user-friendly design.",
+        "longDescription": {
+            "issue": "Users needed an intuitive tool to calculate monthly loan payments accurately and efficiently.",
+            "solution": "Developed a TypeScript and Angular-based frontend application with a responsive interface, leveraging AI-generated visuals and rigorous testing to ensure precision and usability.",
+            "lessonsLearned": "Gained expertise in TypeScript for type-safe development, Angular for structured frontend architecture, and applied generative AI to enhance visual design.",
+            "extraInfo": ""
+        },
+        "technologies": ["TypeScript", "Angular", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/loan-01.png",
+            "/src/assets/images/projects/loan-02.png",
+            "/src/assets/images/projects/loan-03.png",
+            "/src/assets/images/projects/loan-04.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/loan-app",
+        "liveUrl": "https://ace-d-baugh.github.io/loan-app",
+        "type": "Front-End"
+    },
+    {
+        "id": 11,
+        "title": "In-n-Out Books",
+        "shortDescription": "An Angular-based application for exploring book and author data via a public API.",
+        "longDescription": {
+            "issue": "Manually curating book and author information was time-consuming and prone to errors.",
+            "solution": "Developed an Angular and JavaScript-based frontend application that integrates with a public book database API, delivering dynamic content with a responsive design tested using SoapUI and Swagger.",
+            "lessonsLearned": "Mastered API integration with Angular, enhanced skills in JavaScript for data handling, and gained experience with API testing tools like SoapUI and Swagger.",
+            "extraInfo": ""
+        },
+        "technologies": ["HTML", "CSS", "JavaScript", "Angular", "SoapUI", "Swagger"],
+        "imageUrls": [
+            "/src/assets/images/projects/book-01.png",
+            "/src/assets/images/projects/book-02.png",
+            "/src/assets/images/projects/book-03.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/in-n-out-books",
+        "liveUrl": "https://ace-d-baugh.github.io/in-n-out-books/",
+        "type": "Front-End"
+    },
+    {
+        "id": 12,
+        "title": "Pets-R-Us",
+        "shortDescription": "An Angular-based pet adoption platform with a responsive, user-friendly interface.",
+        "longDescription": {
+            "issue": "Pet adoption platforms needed a streamlined interface to showcase available pet service appointments and facilitate user interaction.",
+            "solution": "Built an Angular-based frontend application with JavaScript, HTML, and CSS, featuring a responsive design to display services and enable appointment requests, ensuring accessibility across devices.",
+            "lessonsLearned": "Enhanced proficiency in Angular for building modular applications, applied UX/UI principles for intuitive navigation, and improved CSS skills for responsive layouts.",
+            "extraInfo": "The application is designed to integrate with backend APIs for real-time appointment data updates."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
+        "imageUrls": [
+            "/src/assets/images/projects/pets-01.png",
+            "/src/assets/images/projects/pets-02.png",
+            "/src/assets/images/projects/pets-03.png",
+            "/src/assets/images/projects/pets-04.png",
+            "/src/assets/images/projects/pets-05.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/pets-r-us",
+        "liveUrl": "https://ace-d-baugh-pets-r-us.onrender.com/",
+        "type": "Front-End"
+    },
+    {
+        "id": 13,
+        "title": "GPA Calculator App",
+        "shortDescription": "An Angular-based tool for students to calculate their GPA with ease.",
+        "longDescription": {
+            "issue": "Students needed a reliable, user-friendly application to calculate their GPA accurately without manual errors.",
+            "solution": "Developed an Angular-based frontend application using JavaScript, HTML, and CSS, featuring an intuitive interface for inputting grades and computing GPAs with real-time feedback.",
+            "lessonsLearned": "Strengthened skills in Angular for interactive applications, improved JavaScript logic for calculations, and applied UX principles for a seamless user experience.",
+            "extraInfo": "Demo credentials: Usernames: 1007, 1008, 1009, 1010, 1011, 1012"
+        },
+        "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
+        "imageUrls": [
+            "/src/assets/images/projects/gpa-01.png",
+            "/src/assets/images/projects/gpa-02.png",
+            "/src/assets/images/projects/gpa-03.png",
+            "/src/assets/images/projects/gpa-04.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/gpa-calculator-app",
+        "liveUrl": "https://ace-d-baugh.github.io/gpa-calculator-app/",
+        "type": "Front-End"
+    },
+    {
+        "id": 14,
+        "title": "Composer App",
+        "shortDescription": "An Angular-based application for exploring composer biographies and works.",
+        "longDescription": {
+            "issue": "Music enthusiasts needed an accessible platform to explore detailed information about composers and their works.",
+            "solution": "Built an Angular-based frontend application with JavaScript, HTML, and CSS, integrating a clean, responsive design to display composer profiles and musical works dynamically.",
+            "lessonsLearned": "Advanced Angular skills for data-driven applications, refined JavaScript for content management, and applied CSS for visually appealing layouts.",
+            "extraInfo": "The application is designed to support future API integration for expanded content."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
+        "imageUrls": [
+            "/src/assets/images/projects/composer-01.png",
+            "/src/assets/images/projects/composer-02.png",
+            "/src/assets/images/projects/composer-03.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/enterprise-composer-app",
+        "liveUrl": "https://ace-d-baugh.github.io/enterprise-composer-app/",
+        "type": "Front-End"
+    },
+    {
+        "id": 15,
+        "title": "Mark's Bio Site",
+        "shortDescription": "A responsive biography website showcasing a client’s professional achievements.",
+        "longDescription": {
+            "issue": "The client required a professional, visually engaging website to highlight their career and accomplishments.",
+            "solution": "Developed a responsive frontend application using HTML, CSS, JavaScript, and Angular, designed to showcase biographical content with a modern, user-friendly interface optimized for all devices.",
+            "lessonsLearned": "Improved skills in Angular for structured content delivery, enhanced CSS for responsive design, and applied UX/UI principles to meet client expectations.",
+            "extraInfo": "The site is optimized for accessibility and cross-browser compatibility."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
+        "imageUrls": [
+            "/src/assets/images/projects/mark-01.png",
+            "/src/assets/images/projects/mark-02.png",
+            "/src/assets/images/projects/mark-03.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/biosite/",
+        "liveUrl": "https://ace-d-baugh.github.io/biosite/",
+        "type": "Front-End"
+    },
+    {
+        "id": 16,
+        "title": "Flight of Passage Grouper App",
+        "shortDescription": "A mobile-optimized JavaScript app for managing Disney’s Flight of Passage seating.",
+        "longDescription": {
+            "issue": "The existing employee-facing app lacked customer-friendly features and flexibility for managing seating arrangements.",
+            "solution": "Developed a JavaScript-based mobile application using HTML5 canvas, featuring enhanced color and size variations for seat marking, intuitive customer visuals, and employee tools for designating inoperable seats, tailored to the attraction’s theme.",
+            "lessonsLearned": "Gained proficiency in HTML5 canvas for interactive graphics, deepened JavaScript skills for mobile applications, and learned resilience through project feedback and iteration.",
+            "extraInfo": "This was built for a Surface Pro 7 Tablet in landscape view. You may use a desktop browser if you can simulate a tablet."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/fop-01.png",
+            "/src/assets/images/projects/fop-02.png",
+            "/src/assets/images/projects/fop-03.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/grouper",
+        "liveUrl": "https://ace-d-baugh.github.io/grouper/",
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 17,
+        "title": "Penalty Kick Game",
+        "shortDescription": "A mobile-friendly JavaScript game simulating a soccer penalty kick experience.",
+        "longDescription": {
+            "issue": "Users wanted an engaging, lightweight mobile game to simulate soccer penalty kicks with intuitive controls.",
+            "solution": "Developed a JavaScript-based mobile game using HTML and CSS, featuring responsive animations and user-friendly mechanics to deliver an immersive penalty kick experience.",
+            "lessonsLearned": "Enhanced JavaScript skills for game logic, mastered CSS animations for dynamic visuals, and applied mobile-first design principles for optimal performance.",
+            "extraInfo": "Optimized for mobile devices with touch-based controls."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/kick-01.png",
+            "/src/assets/images/projects/kick-02.png",
+            "/src/assets/images/projects/kick-03.png",
+            "/src/assets/images/projects/kick-04.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/PenaltyKickGame/",
+        "liveUrl": "https://ace-d-baugh.github.io/PenaltyKickGame/",
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 18,
+        "title": "Dice Game",
+        "shortDescription": "A mobile-optimized JavaScript dice game with engaging gameplay mechanics.",
+        "longDescription": {
+            "issue": "Users needed a simple, entertaining dice game optimized for mobile devices with smooth interactions.",
+            "solution": "Built a JavaScript-based mobile game using HTML and CSS, featuring randomized dice rolls, responsive design, and intuitive controls to ensure an engaging user experience.",
+            "lessonsLearned": "Strengthened JavaScript for game mechanics, refined CSS for mobile animations, and applied UX principles to enhance player interaction.",
+            "extraInfo": "Designed for cross-device compatibility with touch support."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/dice-01.png",
+            "/src/assets/images/projects/dice-02.png",
+            "/src/assets/images/projects/dice-03.png",
+            "/src/assets/images/projects/dice-04.png"
+        ],
+        "codeUrl": "https://github.com/acieffe/dice-game/",
+        "liveUrl": "https://acieffe.github.io/dice-game/",
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 19,
+        "title": "Grouper Training App",
+        "shortDescription": "A mobile app for training employees by giving them a set of random number to simulate groups of patrons.",
+        "longDescription": {
+            "issue": "Employees required an interactive mobile tool to practice grouping patrons efficiently by simulating real-world scenarios.",
+        "solution": "Developed a JavaScript-based mobile application using HTML and CSS, featuring a random number generator to simulate patron groups, with a responsive interface designed to enhance training efficiency and engagement.",
+        "lessonsLearned": "Advanced JavaScript skills for dynamic random number generation, refined CSS for mobile-optimized layouts, and applied UX/UI principles to create an effective training tool tailored to employee needs.",
+        "extraInfo": "Optimized for mobile devices to support on-the-go training."
+    },
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/group-01.png",
+            "/src/assets/images/projects/group-02.png",
+            "/src/assets/images/projects/group-03.png"
+        ],
+        "codeUrl": "https://github.com/acieffe/Mobile-Training/",
+        "liveUrl": "https://acieffe.github.io/Mobile-Training/",
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 20,
+        "title": "Wedding Countdown App",
+        "shortDescription": "A mobile-friendly countdown app for keeping track of wedding dates and budget by showing days left and how much per day needed to save for the big day.",
+        "longDescription": {
+            "issue": "Couples needed an intuitive mobile tool to track their wedding countdown and manage budget planning effectively, with clear daily savings goals.",
+        "solution": "Developed a JavaScript-based mobile application using HTML and CSS, featuring a real-time countdown timer and budget calculator that displays remaining days and daily savings needed, designed with a mobile interface.",
+        "lessonsLearned": "Enhanced JavaScript expertise for real-time calculations, refined CSS for mobile-optimized designs, and applied UX/UI principles to ensure an intuitive and engaging user experience.",
+            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/wed-count-01.png",
+            "/src/assets/images/projects/wed-count-02.png"
+        ],
+        "codeUrl": "https://github.com/acieffe/Mobile-Countdown",
+        "liveUrl": "https://acieffe.github.io/Mobile-Countdown/",
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 21,
+        "title": "Sound Spinner",
+        "shortDescription": "A mobile-optimized web version of a Fisher-Price sound spinner with modern visuals.",
+        "longDescription": {
+            "issue": "Users wanted a portable, modernized version of the classic Fisher-Price sound spinner with enhanced interactivity.",
+            "solution": "Developed a JavaScript-based mobile application using HTML and CSS, integrating animal graphics and sounds from the Google database, with precise rotational animations for an engaging experience.",
+            "lessonsLearned": "Mastered JavaScript for complex animations, applied mathematical logic for rotational positioning, and enhanced CSS for mobile-optimized visuals.",
+            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/sound-01.png",
+            "/src/assets/images/projects/sound-02.png",
+            "/src/assets/images/projects/sound-03.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/SoundSpinner",
+        "liveUrl": "https://ace-d-baugh.github.io/SoundSpinner/",
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 22,
+        "title": "BB's Toys",
+        "shortDescription": "A mobile countdown app to teach young children to count backwards playfully.",
+        "longDescription": {
+            "issue": "Young children needed an engaging tool to practice counting backwards during idle moments.",
+            "solution": "Developed a JavaScript and PHP-based mobile application with HTML and CSS, featuring animated countdowns and interactive elements to entertain and educate young users.",
+            "lessonsLearned": "Strengthened JavaScript and PHP for dynamic animations, mastered CSS for engaging visuals, and applied UX principles to design for young audiences.",
+            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
+        },
+        "technologies": ["HTML", "PHP", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/bb-01.png",
+            "/src/assets/images/projects/bb-02.png",
+            "/src/assets/images/projects/bb-03.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/bbstoys",
+        "liveUrl": "https://ace-d-baugh.github.io/bbstoys/",
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 23,
+        "title": "Pokemon Hatch",
+        "shortDescription": "A mobile app simulating Pokemon egg hatching using API-driven data and animations.",
+        "longDescription": {
+            "issue": "Young Pokemon fans needed an interactive, mobile-optimized app to simulate egg hatching with engaging visuals.",
+            "solution": "Developed a JavaScript-based mobile application using HTML and CSS, integrating the PokeAPI for dynamic Pokemon data and images, with animated hatching sequences for an immersive experience.",
+            "lessonsLearned": "Mastered API integration with JavaScript, advanced CSS for animation sequences, and applied mobile-first design for optimal user engagement.",
+            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device. **API was not working at last testing**"
+        },
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imageUrls": [
+            "/src/assets/images/projects/hatch-01.png",
+            "/src/assets/images/projects/hatch-02.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/pokemon-hatch",
+        "liveUrl": "https://ace-d-baugh.github.io/pokemon-hatch/",
+        "type": "Mobile Front-End"
+    }
+]

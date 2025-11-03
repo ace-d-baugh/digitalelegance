@@ -1,0 +1,72 @@
+/* components/Resume/Skills/Skills.css */
+
+.Skills {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--background);
+    padding: .5rem 0;
+}
+
+.Skills h2 {
+    color: var(--background);
+}
+
+.Skills li {
+    list-style: none;
+    color: var(--background);
+    font-size: larger;
+}
+
+.divider {
+    width: 5px;
+    height: 85%;
+    background: var(--background);
+    margin: 1rem 0;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+    font-size: smaller;
+}
+
+.skills-display-lg {
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-display-lg ul {
+    padding: 1rem;
+    margin: 0;
+}
+
+.skills-display-sm {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-display-sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: .5rem;
+    }
+
+    .Skills li {
+        margin: -0.25rem;
+    }
+
+    .skills-display-lg {
+        display: none;
+    }
+}

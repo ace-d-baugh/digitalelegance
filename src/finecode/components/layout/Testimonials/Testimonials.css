@@ -1,0 +1,24 @@
+/* components/Testimonials/Testimonials.css */
+
+.Testimonials-container {
+    padding: .5rem 0;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.Testimonial {
+    width: 200px;
+    padding: .25rem;
+    margin: 0 auto;
+}
+
+.Testimonial img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}

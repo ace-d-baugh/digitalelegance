@@ -1,0 +1,33 @@
+/* components/Logo/Logo.css */
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo h1{
+    text-align: center;
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.Logo .logoArray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Logo h1{
+        font-size: 1.5rem;
+    }
+
+    .Logo .logoArray {
+        gap: 0rem;
+        flex-direction: column;
+    }
+    
+}

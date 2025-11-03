@@ -1,0 +1,26 @@
+/* App.css or global.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0 auto; /* Center the content horizontally */
+  text-align: center;
+}
+
+.Routes {
+  flex: 1; /* Take up remaining space */
+  margin-top: 4rem;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Routes {
+    margin-top: 6rem;
+  }
+}

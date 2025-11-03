@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "title": "VIP Tour Guide",
+        "employer": "The Walt Disney Company",
+        "location": "Orlando, FL",
+        "start": "03/2018",
+        "end": "Current",
+        "responsibilities": [
+            "Developed extensive knowledge of Walt Disney history, parks, resorts, and entertainment options, including past and present attractions, shows, and character meet-and-greets",
+            "Stayed up-to-date on new park openings, refurbishments, current news, and special events to provide guests with insider information",
+            "Led groups of up to 120 guests from diverse backgrounds on customized tours, ensuring timely and efficient navigation of the parks",
+            "Utilized effective and professional communication and interpersonal skills to engage guests, build rapport, and create memorable experiences in ever-changing situations, always seeking creative solutions"
+            
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Owner/Web Developer Photographer",
+        "employer": "Digital Elegance",
+        "location": "Orlando, FL",
+        "start": "03/2007",
+        "end": "Current",
+        "responsibilities": [
+            "Designed and maintained portfolio website utilizing HTML5, CSS, PHP, WordPress, WooComerce, JavaScript, and React",
+            "Delivered high-quality images under tight deadlines, demonstrating strong time management skills",
+            "Recognized for exceptional communication skills and focused attention to detail",
+            "Managed day-to-day business operations",
+            "Developed and maintained strong relationships with clients, resulting in repeat business and referrals"
+            
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Senior Web Developer",
+        "employer": "The Walt Disney Company",
+        "location": "Orlando, FL",
+        "start": "07/2024",
+        "end": "12/2024",
+        "responsibilities": [
+            "Streamlined development processes by utilizing version control systems such as Git",
+            "Managed multiple projects simultaneously under tight deadlines while maintaining high levels of quality assurance in deliverables",
+            "Collaborated with cross-functional teams to develop and implement innovative web solutions for client projects",
+            "Stayed abreast of emerging web technologies, industry trends, and best practices to continuously improve skills and deliver cutting-edge solutions for clients such as AWS, C#, .NET, and Figma",
+            "Improved user experience with the development of intuitive navigation elements and user-friendly layouts",
+            "Major Project: Design and implement a data-driven component to an existing large-scale application for scheduling preferences to be used by thousands of Cast Members at Disneyland and Walt Disney World"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Relief Coordinator | Team Trainer",
+        "employer": "The Walt Disney Company",
+        "location": "Orlando, FL",
+        "start": "05/2014",
+        "end": "09/2018",
+        "responsibilities": [
+            "Collaborated with Imagineering team to improve customer experience",
+            "Oversaw fast-paced attractions, assisting 1,500 guests per hour",
+            "Trained new employees job requirements and annual award recipient for work efforts",
+            "Entered data, generated reports, and produced tracking documents",
+            "Improved team productivity with regular communication and progress updates, fostering a collaborative work environment"
+            
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Route Sales Manager",
+        "employer": "Schwan Food Co",
+        "location": "Payson, UT",
+        "start": "01/2012",
+        "end": "11/2012",
+        "responsibilities": [
+            "Invoiced accurately, coordinated shipping documentation and completed daily logs to satisfy record-keeping requirements and keep management informed of field activities",
+            "Identified revenue and sales goals and presented to sales team",
+            "Drove customer retention rates by consistently delivering exceptional service, fostering trust, and building lasting relationships with key decision-makers at each account",
+            "Followed traffic laws during delivery for safety of pedestrians and other vehicles",
+            "Managed multiple deliveries simultaneously, maximizing efficiency and productivity"
+            
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Technical Support/Market Analyst",
+        "employer": "RFinity LLC",
+        "location": "Rexburg, ID",
+        "start": "05/2010",
+        "end": "06/2011",
+        "responsibilities": [
+            "Assisted clients with new technology in hardware and software",
+            "Analyzed market big data from up to 15 companies and compiled concise weekly reports",
+            "Leveraged predictive analytics techniques to anticipate changes in consumer demand patterns, guiding proactive strategy adjustments.",
+            "Reduced costs by streamlining market research processes for efficient data gathering and reporting.",
+            "Assessed customer satisfaction levels through surveys and focus groups, informing improvements to products/services offerings."
+            
+        ]
+    },
+    {
+        "id": 7,
+        "title": "General Theatre/Marketing Manager",
+        "employer": "Carmike Cinemas",
+        "location": "Rexburg, ID",
+        "start": "04/2003",
+        "end": "05/2010",
+        "responsibilities": [
+            "Coordinated promotional events with film production companies and local vendors to increase attendance 210%",
+            "Conducted regular evaluations of staff performance identifying strengths weaknesses providing feedback professional development opportunities.",
+            "Concession sales increased 100% per capita",
+            "Boosted brand awareness and generated leads while managing internal and external marketing campaigns and programs.",
+            "Managed social media accounts for optimal audience engagement and increased online presence."            
+        ]
+    }
+]

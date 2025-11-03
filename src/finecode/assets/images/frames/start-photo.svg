@@ -1,0 +1,7 @@
+<svg id="start-photo" xmlns="http://www.w3.org/2000/svg" width="816" height="100" fill="none">
+  <rect id="background" x="0" y="0" width="816" height="100" fill="none"/>
+  <rect id="line-01" x="0" y="0" width="32" height="100" fill="#d0d3d2"/>
+  <rect id="line-02" x="100" y="0" width="32" height="100" fill="#d0d3d2"/>
+  <rect id="line-03" x="200" y="0" width="32" height="100" fill="#d0d3d2"/>
+  <rect id="line-04" x="300" y="0" width="32" height="100" fill="#d0d3d2"/>
+</svg>
