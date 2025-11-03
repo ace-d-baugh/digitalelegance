@@ -6,32 +6,80 @@
     max-width: 300px;
     margin: 0 auto;
     overflow: hidden;
-  }
-  
-  .carousel-image {
+}
+
+.carousel-image {
     width: 100%;
     height: auto;
     display: block;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .carousel-indicators {
+    transition: opacity 0.5s ease-in-out; 
+      /*  Note: The transition will only apply to the image's opacity, not a slide effect */
+}
+
+
+/* --- New Styles for Navigation Buttons (Chevrons) --- */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: var(--color-primary);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10; /* Ensure button is above the image */
+    transition: background 0.3s ease;
+    display: none;
+}
+
+
+.carousel-container:hover .carousel-button{
+  display: block;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button:hover i{
+  color: var(--color-accent);
+}
+
+.carousel-button.prev {
+    left: -10px;
+    border-radius: 0 50% 50% 0; /* Rounded edge on one side */
+}
+
+.carousel-button.next {
+    right: -10px;
+    border-radius: 50% 0 0 50%; /* Rounded edge on one side */
+}
+/* --- End New Styles --- */
+
+.carousel-indicators {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 8px;
-  }
-  
-  .indicator {
+}
+
+.indicator {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: var(--metal-dark);
     border: 1px solid var(--color-primary);
-  }
-  
-  .indicator.active {
-    background: var(--color-accent); /* Light blue for active indicator */
-  }
+    cursor: pointer; /* Makes the indicator clickable */
+    transition: background 0.3s ease;
+}
+
+.indicator:hover {
+    opacity: 0.8;
+}
+
+.indicator.active {
+    background: var(--color-accent);
+}
