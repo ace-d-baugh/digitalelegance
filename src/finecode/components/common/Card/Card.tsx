@@ -10,7 +10,7 @@ function Card({ id, title, imageUrl, alt, description }: { id: number, title: st
             <h3 className='title'>{title}</h3>
             <Photo src={imageUrl} width={200} height={200} alt={alt} />
             <p className='description'>{description}</p>
-            <Button text="View Project" link={`/project/${id}`} />
+            <Button text="View Project" link={`./project/${id}`} />
         </div>
     );
 }

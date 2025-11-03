@@ -1,8 +1,8 @@
-// App.tsx
+// FineCodeApp.tsx
 
 import { Route, Routes } from 'react-router-dom'
-import { Header, Footer } from '../finecode/components/layout'
-import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from '../finecode/pages/'
+import { Header, Footer } from './components/layout'
+import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from './pages/'
 import './FineCodeApp.css'
 
 function FineCodeApp({companyName}: {companyName: string}) {

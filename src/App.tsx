@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/finecode" element={<FineCode />} />
+        <Route path="/finecode/*" element={<FineCode />} />
         <Route path="/fineart" element={<FineArt />} />
       </Routes>
     </Router>
