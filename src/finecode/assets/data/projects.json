@@ -11,12 +11,12 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/ta-01.png",
-            "/src/assets/images/projects/ta-02.png",
-            "/src/assets/images/projects/ta-03.png",
-            "/src/assets/images/projects/ta-04.png",
-            "/src/assets/images/projects/ta-05.png",
-            "/src/assets/images/projects/ta-06.png"
+            "/images/projects/ta-01.png",
+            "/images/projects/ta-02.png",
+            "/images/projects/ta-03.png",
+            "/images/projects/ta-04.png",
+            "/images/projects/ta-05.png",
+            "/images/projects/ta-06.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/TA-Projects",
         "liveUrl": "https://ace-d-baugh.github.io/TA-Projects/",
@@ -34,10 +34,10 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/yelp-01.png",
-            "/src/assets/images/projects/yelp-02.png",
-            "/src/assets/images/projects/yelp-03.png",
-            "/src/assets/images/projects/yelp-04.png"
+            "/images/projects/yelp-01.png",
+            "/images/projects/yelp-02.png",
+            "/images/projects/yelp-03.png",
+            "/images/projects/yelp-04.png"
         ],
         "codeUrl": "https://github.com/acieffe/Udemy-YelpCamp",
         "liveUrl": "https://acieffe-yelp-camp.onrender.com/",
@@ -55,12 +55,12 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs-01.png",
-            "/src/assets/images/projects/bcrs-02.png",
-            "/src/assets/images/projects/bcrs-03.png",
-            "/src/assets/images/projects/bcrs-04.png",
-            "/src/assets/images/projects/bcrs-05.png",
-            "/src/assets/images/projects/bcrs-06.png"
+            "/images/projects/bcrs-01.png",
+            "/images/projects/bcrs-02.png",
+            "/images/projects/bcrs-03.png",
+            "/images/projects/bcrs-04.png",
+            "/images/projects/bcrs-05.png",
+            "/images/projects/bcrs-06.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/gryffindor-bcrs",
         "liveUrl": "https://gryffindor-bcrs.onrender.com/#/",
@@ -78,10 +78,10 @@
         },
         "technologies": ["C#", ".NET Core", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/missing.png",
-            "/src/assets/images/projects/missing.png",
-            "/src/assets/images/projects/missing.png",
-            "/src/assets/images/projects/missing.png"
+            "/images/projects/missing.png",
+            "/images/projects/missing.png",
+            "/images/projects/missing.png",
+            "/images/projects/missing.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
         "liveUrl": "#",
@@ -99,10 +99,10 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/node-01.png",
-            "/src/assets/images/projects/node-02.png",
-            "/src/assets/images/projects/node-03.png",
-            "/src/assets/images/projects/node-04.png"
+            "/images/projects/node-01.png",
+            "/images/projects/node-02.png",
+            "/images/projects/node-03.png",
+            "/images/projects/node-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/nodebucket",
         "liveUrl": "https://baugh-nodebucket.onrender.com/",
@@ -120,11 +120,11 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/team-01.png",
-            "/src/assets/images/projects/team-02.png",
-            "/src/assets/images/projects/team-03.png",
-            "/src/assets/images/projects/team-04.png",
-            "/src/assets/images/projects/team-05.png"
+            "/images/projects/team-01.png",
+            "/images/projects/team-02.png",
+            "/images/projects/team-03.png",
+            "/images/projects/team-04.png",
+            "/images/projects/team-05.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/teams-stand-up-tracker",
         "liveUrl": "https://ace-d-baugh.github.io/teams-stand-up-tracker/",
@@ -142,10 +142,10 @@
         },
         "technologies": ["CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/animate-02.png",
-            "/src/assets/images/projects/animate-03.png",
-            "/src/assets/images/projects/animate-04.png",
-            "/src/assets/images/projects/animate-05.png"
+            "/images/projects/animate-02.png",
+            "/images/projects/animate-03.png",
+            "/images/projects/animate-04.png",
+            "/images/projects/animate-05.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/Animations",
         "liveUrl": "https://ace-d-baugh.github.io/Animations/",
@@ -163,10 +163,10 @@
         },
         "technologies": ["React", "Bootstrap", "CSS", "WordPress", "WooCommerce"],
         "imageUrls": [
-            "/src/assets/images/projects/missing.png",
-            "/src/assets/images/projects/missing.png",
-            "/src/assets/images/projects/missing.png",
-            "/src/assets/images/projects/missing.png"
+            "/images/projects/missing.png",
+            "/images/projects/missing.png",
+            "/images/projects/missing.png",
+            "/images/projects/missing.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/DigitalElegance",
         "liveUrl": "https://digitalelegance.com",
@@ -184,10 +184,10 @@
         },
         "technologies": ["JavaScript", "CSS", "Photoshop"],
         "imageUrls": [
-            "/src/assets/images/projects/liz-01.png",
-            "/src/assets/images/projects/liz-02.png",
-            "/src/assets/images/projects/liz-03.png",
-            "/src/assets/images/projects/liz-04.png"
+            "/images/projects/liz-01.png",
+            "/images/projects/liz-02.png",
+            "/images/projects/liz-03.png",
+            "/images/projects/liz-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
         "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",
@@ -205,10 +205,10 @@
         },
         "technologies": ["TypeScript", "Angular", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/loan-01.png",
-            "/src/assets/images/projects/loan-02.png",
-            "/src/assets/images/projects/loan-03.png",
-            "/src/assets/images/projects/loan-04.png"
+            "/images/projects/loan-01.png",
+            "/images/projects/loan-02.png",
+            "/images/projects/loan-03.png",
+            "/images/projects/loan-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/loan-app",
         "liveUrl": "https://ace-d-baugh.github.io/loan-app",
@@ -226,9 +226,9 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript", "Angular", "SoapUI", "Swagger"],
         "imageUrls": [
-            "/src/assets/images/projects/book-01.png",
-            "/src/assets/images/projects/book-02.png",
-            "/src/assets/images/projects/book-03.png"
+            "/images/projects/book-01.png",
+            "/images/projects/book-02.png",
+            "/images/projects/book-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/in-n-out-books",
         "liveUrl": "https://ace-d-baugh.github.io/in-n-out-books/",
@@ -246,11 +246,11 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
         "imageUrls": [
-            "/src/assets/images/projects/pets-01.png",
-            "/src/assets/images/projects/pets-02.png",
-            "/src/assets/images/projects/pets-03.png",
-            "/src/assets/images/projects/pets-04.png",
-            "/src/assets/images/projects/pets-05.png"
+            "/images/projects/pets-01.png",
+            "/images/projects/pets-02.png",
+            "/images/projects/pets-03.png",
+            "/images/projects/pets-04.png",
+            "/images/projects/pets-05.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/pets-r-us",
         "liveUrl": "https://ace-d-baugh-pets-r-us.onrender.com/",
@@ -268,10 +268,10 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
         "imageUrls": [
-            "/src/assets/images/projects/gpa-01.png",
-            "/src/assets/images/projects/gpa-02.png",
-            "/src/assets/images/projects/gpa-03.png",
-            "/src/assets/images/projects/gpa-04.png"
+            "/images/projects/gpa-01.png",
+            "/images/projects/gpa-02.png",
+            "/images/projects/gpa-03.png",
+            "/images/projects/gpa-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/gpa-calculator-app",
         "liveUrl": "https://ace-d-baugh.github.io/gpa-calculator-app/",
@@ -289,9 +289,9 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
         "imageUrls": [
-            "/src/assets/images/projects/composer-01.png",
-            "/src/assets/images/projects/composer-02.png",
-            "/src/assets/images/projects/composer-03.png"
+            "/images/projects/composer-01.png",
+            "/images/projects/composer-02.png",
+            "/images/projects/composer-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/enterprise-composer-app",
         "liveUrl": "https://ace-d-baugh.github.io/enterprise-composer-app/",
@@ -309,9 +309,9 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
         "imageUrls": [
-            "/src/assets/images/projects/mark-01.png",
-            "/src/assets/images/projects/mark-02.png",
-            "/src/assets/images/projects/mark-03.png"
+            "/images/projects/mark-01.png",
+            "/images/projects/mark-02.png",
+            "/images/projects/mark-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/biosite/",
         "liveUrl": "https://ace-d-baugh.github.io/biosite/",
@@ -329,9 +329,9 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/fop-01.png",
-            "/src/assets/images/projects/fop-02.png",
-            "/src/assets/images/projects/fop-03.png"
+            "/images/projects/fop-01.png",
+            "/images/projects/fop-02.png",
+            "/images/projects/fop-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/grouper",
         "liveUrl": "https://ace-d-baugh.github.io/grouper/",
@@ -349,10 +349,10 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/kick-01.png",
-            "/src/assets/images/projects/kick-02.png",
-            "/src/assets/images/projects/kick-03.png",
-            "/src/assets/images/projects/kick-04.png"
+            "/images/projects/kick-01.png",
+            "/images/projects/kick-02.png",
+            "/images/projects/kick-03.png",
+            "/images/projects/kick-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/PenaltyKickGame/",
         "liveUrl": "https://ace-d-baugh.github.io/PenaltyKickGame/",
@@ -370,10 +370,10 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/dice-01.png",
-            "/src/assets/images/projects/dice-02.png",
-            "/src/assets/images/projects/dice-03.png",
-            "/src/assets/images/projects/dice-04.png"
+            "/images/projects/dice-01.png",
+            "/images/projects/dice-02.png",
+            "/images/projects/dice-03.png",
+            "/images/projects/dice-04.png"
         ],
         "codeUrl": "https://github.com/acieffe/dice-game/",
         "liveUrl": "https://acieffe.github.io/dice-game/",
@@ -391,9 +391,9 @@
     },
         "technologies": ["HTML", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/group-01.png",
-            "/src/assets/images/projects/group-02.png",
-            "/src/assets/images/projects/group-03.png"
+            "/images/projects/group-01.png",
+            "/images/projects/group-02.png",
+            "/images/projects/group-03.png"
         ],
         "codeUrl": "https://github.com/acieffe/Mobile-Training/",
         "liveUrl": "https://acieffe.github.io/Mobile-Training/",
@@ -411,8 +411,8 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/wed-count-01.png",
-            "/src/assets/images/projects/wed-count-02.png"
+            "/images/projects/wed-count-01.png",
+            "/images/projects/wed-count-02.png"
         ],
         "codeUrl": "https://github.com/acieffe/Mobile-Countdown",
         "liveUrl": "https://acieffe.github.io/Mobile-Countdown/",
@@ -430,9 +430,9 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/sound-01.png",
-            "/src/assets/images/projects/sound-02.png",
-            "/src/assets/images/projects/sound-03.png"
+            "/images/projects/sound-01.png",
+            "/images/projects/sound-02.png",
+            "/images/projects/sound-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/SoundSpinner",
         "liveUrl": "https://ace-d-baugh.github.io/SoundSpinner/",
@@ -450,9 +450,9 @@
         },
         "technologies": ["HTML", "PHP", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/bb-01.png",
-            "/src/assets/images/projects/bb-02.png",
-            "/src/assets/images/projects/bb-03.png"
+            "/images/projects/bb-01.png",
+            "/images/projects/bb-02.png",
+            "/images/projects/bb-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/bbstoys",
         "liveUrl": "https://ace-d-baugh.github.io/bbstoys/",
@@ -470,8 +470,8 @@
         },
         "technologies": ["HTML", "CSS", "JavaScript"],
         "imageUrls": [
-            "/src/assets/images/projects/hatch-01.png",
-            "/src/assets/images/projects/hatch-02.png"
+            "/images/projects/hatch-01.png",
+            "/images/projects/hatch-02.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/pokemon-hatch",
         "liveUrl": "https://ace-d-baugh.github.io/pokemon-hatch/",
