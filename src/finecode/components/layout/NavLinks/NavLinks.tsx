@@ -8,17 +8,17 @@ function NavLinks() {
 		<div className="NavLinks-container">
 			<ul className="navbar-links">
 				<li>
-					<Link to="./about">
+					<Link to="/finecode/about">
 						<i className="nf nf-oct-person_fill"> <span>About</span></i>
 					</Link>
 				</li>
 				<li>
-					<Link to="./portfolio">
+					<Link to="/finecode/portfolio">
 						<i className="nf nf-oct-briefcase"> <span>Portfolio</span></i>
 					</Link>
 				</li>
 				<li>
-					<Link to="./resume">
+					<Link to="/finecode/resume">
 						<i className="nf nf-oct-log"> <span>Resumé</span></i>
 					</Link>
 				</li>
@@ -28,7 +28,7 @@ function NavLinks() {
 					</Link>
 				</li>
 				<li>
-					<Link to="./contact">
+					<Link to="/finecode/contact">
 						<i className="nf nf-md-email_newsletter"> <span>Contact</span></i>
 					</Link>
 				</li>

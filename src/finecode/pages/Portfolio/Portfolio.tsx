@@ -31,14 +31,14 @@ function Portfolio() {
             <h1>Portfolio | Case Studies</h1>
             {Projects.map((project: Project) => (
                 <div key={project.id} className="project">
-                    <Link to={`/project/${project.id}`}>
+                    <Link to={`/finecode/project/${project.id}`}>
                         <h2>{project.title}</h2>
                     </Link>
                     <p>{project.type}</p>                            
                     <p>{project.shortDescription}</p>
                     <Photo src={project.imageUrls[0]} width={200} height={200} alt={project.title} />
                     <p>{project.longDescription.issue}</p>
-                    <Button text="More Details" link={`/project/${project.id}`} />
+                    <Button text="More Details" link={`/finecode/project/${project.id}`} />
                     <p>&nbsp;</p>
                 </div>
             ))}

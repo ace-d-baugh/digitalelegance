@@ -8,19 +8,19 @@ function Footer({ company }: { company: string }) {
         <footer className="footer">
             <ul className="footer-links">
                 <li>
-                    <Link to="./about">About</Link>
+                    <Link to="/finecode/about">About</Link>
                 </li>
                 <li>
-                    <Link to="./portfolio">Portfolio</Link>
+                    <Link to="/finecode/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                    <Link to="./resume">Resum&eacute;</Link>
+                    <Link to="/finecode/resume">Resum&eacute;</Link>
                 </li>
                 <li>
                     <Link to="https://medium.com/@ace.d.baugh" target="_blank">Blog</Link>
                 </li>
                 <li>
-                    <Link to="./contact">Contact</Link>
+                    <Link to="/finecode/contact">Contact</Link>
                 </li>
             </ul>
             <ul className="footer-links">
