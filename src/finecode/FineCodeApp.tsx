@@ -3,13 +3,13 @@
 import { Route, Routes } from 'react-router-dom'
 import { Header, Footer } from '../finecode/components/layout'
 import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from '../finecode/pages/'
-import './App.css'
+import './FineCodeApp.css'
 
-function App({companyName}: {companyName: string}) {
+function FineCodeApp({companyName}: {companyName: string}) {
 
   return (
     <>
-      <div className="App">
+      <div className="FineCodeApp">
         <Header logoText = {companyName} />
         <div className="Routes">
           <Routes>
@@ -28,7 +28,7 @@ function App({companyName}: {companyName: string}) {
   )
 }
 
-export default App
+export default FineCodeApp
 
 // More Information from videos:
 // https://www.youtube.com/watch?v=WgXU7XAZYmQ
