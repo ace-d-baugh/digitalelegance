@@ -5,7 +5,7 @@
 	min-height: var(--footer-height);
 	justify-content: center;
 	align-items: center;
-	font-size: .75rem;
+	font-size: 0.75rem;
 }
 
 ul.footer-links {
@@ -13,7 +13,7 @@ ul.footer-links {
 	list-style: none;
 	justify-content: center;
 	align-items: center;
-	margin: 0 0 .25rem 0;
+	margin: 0 0 0.25rem 0;
 }
 
 .footer-links li,
@@ -22,13 +22,12 @@ ul.footer-links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 .25rem;
+	margin: 0 0.25rem;
 }
 
 @media screen and (max-width: 768px) {
 	.footer {
-		font-size: .5rem;
+		font-size: 0.5rem;
 		flex-direction: column;
 	}
-	
 }
