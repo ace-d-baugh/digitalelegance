@@ -1,7 +1,7 @@
 // pages/Portfolio/Portfolio.tsx
 
 import Button from "../../components/common/Button/Button";
-import Projects from '../../assets/data/projects.json';
+import Projects from '../../../assets/data/projects.json';
 import Photo from "../../components/common/Photo/Photo";
 import { Link } from "react-router-dom";
 import './Portfolio.css'

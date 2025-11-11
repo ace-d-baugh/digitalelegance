@@ -1,7 +1,7 @@
 // components/Resume/Education/Education.tsx
 
 import './Education.css';
-import Learning from "../../../../assets/data/education.json";
+import Learning from "../../../../../assets/data/education.json";
 
 interface Certification {
 	id: number;

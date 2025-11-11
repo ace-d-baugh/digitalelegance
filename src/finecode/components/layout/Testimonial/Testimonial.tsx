@@ -1,6 +1,6 @@
 // components/Testimonial/Testimonial.tsx
 
-import Testimonials from '../../../assets/data/testimonials.json'
+import Testimonials from '../../../../assets/data/testimonials.json'
 import './Testimonial.css'
 
 function Testimonial({ id }: { id: number }) {

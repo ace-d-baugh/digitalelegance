@@ -1,7 +1,7 @@
 // components/Resume/Skills/Skills.tsx
 
 import './Skills.css';
-import Data from "../../../../assets/data/skills.json"
+import Data from "../../../../../assets/data/skills.json"
 
 const leftArray = Data.filter((_: string, index: number) => index % 2 === 0);
 const rightArray = Data.filter((_: string, index: number) => index % 2 !== 0);
