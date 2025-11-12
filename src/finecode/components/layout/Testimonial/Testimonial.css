@@ -1,2 +1,101 @@
-/* components/Testimonial/Testimonioal.css */
+/* components/Testimonial/Testimonial.css */
 
+.Testimonial {
+    flex: 0 1 350px;
+    min-width: 280px;
+    width: 100%;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 32px 32px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .testimonial {
+        padding: 32px 40px 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .testimonial {
+        padding: 32px 48px 24px;
+    }
+}
+
+.testimonial:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-quote {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #d4d4d4;
+    margin: 0 0 20px 0;
+    padding-top: 24px;
+    flex-grow: 1;
+    font-style: italic;
+}
+
+.testimonial-quote::before {
+    content: '"';
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-family: Georgia, serif;
+}
+
+.testimonial-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 16px 0 20px 0;
+    letter-spacing: 0.5px;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 0.3s ease;
+}
+
+.testimonial:hover .testimonial-image {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .Testimonial {
+        min-width: 280px;
+        max-width: 350px;
+    }
+    
+    .testimonial {
+        padding: 28px 20px 20px;
+    }
+    
+    .testimonial-quote {
+        font-size: 14px;
+    }
+    
+    .testimonial-image {
+        width: 70px;
+        height: 70px;
+    }
+}
