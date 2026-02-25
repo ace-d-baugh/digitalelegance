@@ -12,12 +12,6 @@ import './Resume.css';
 function Resume() {
   return (
     <div className="Resume">
-      <div className="resume-page-header">
-        <span className="resume-overline">◆ Portfolio ◆</span>
-        <h1 className="resume-title">Resume</h1>
-        <div className="resume-deco-line"></div>
-      </div>
-
       <div className="resume-content">
         <ResumeHeader />
 

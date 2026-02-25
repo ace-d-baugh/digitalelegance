@@ -8,7 +8,7 @@ function ResumeHeader() {
       <h1 className="resume-header-name">Matthew Ace Baugh</h1>
       <div className="resume-header-title">Full-Stack &amp; Front-End Developer</div>
       <div className="resume-header-contact">
-        <span className="contact-item">📍 Kissimmee, FL</span>
+        <span className="contact-item">📍 Orlando, FL</span>
         <span className="contact-sep">◆</span>
         <span className="contact-item"><a href="tel:2085579223">(208) 557-9223</a></span>
         <span className="contact-sep">◆</span>

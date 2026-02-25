@@ -53,7 +53,7 @@
             "lessonsLearned": "Developed proficiency in the MEAN stack, applied waterfall methodology for project management, and emphasized rigorous testing to ensure a reliable user experience.",
             "extraInfo": "Demo credentials: Standard User > username: [mozart], password: [Password01] | Admin User > username: [bach], password: [Password01]"
         },
-        "technologies": ["Angular", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap", "CSS"],
+        "technologies": ["Angular", "Node.js", "Express", "MongoDB", "Generative AI", "Bootstrap", "CSS"],
         "imageUrls": [
             "/images/projects/bcrs-01.png",
             "/images/projects/bcrs-02.png",
