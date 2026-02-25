@@ -2,7 +2,7 @@
 
 .LogoScroll {
     position: relative;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     display: flex;
     flex-direction: column;
