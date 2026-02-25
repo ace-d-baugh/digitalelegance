@@ -1,8 +1,8 @@
 /* components/Hero/Hero.css - Modern with subtle Deco */
 
 .Hero {
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 80vh;
+    height: 80vh;
     position: relative;
     display: flex;
     overflow: hidden;

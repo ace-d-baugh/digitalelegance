@@ -11,8 +11,8 @@ function Footer({ company }: { company: string }) {
             <div className="footer-inner">
                 {/* Brand */}
                 <div className="footer-brand">
-                    <span className="footer-logo">{company}</span>
-                    <span className="footer-tagline">Full-Stack &amp; Frontend Developer</span>
+                    <span className="footer-logo"><NavLink to="https://digitalelegance.com">{company}</NavLink></span>
+                    <span className="footer-tagline">Fine Art Photographer &amp; Fine Vibe Code Web Developer</span>
                 </div>
 
                 {/* Ornamental divider */}
