@@ -90,7 +90,6 @@
 .carousel-frame {
     --border-width: 24px;
     pointer-events: none;   /* don't block carousel swipe/click interactions */
-    z-index: 2;
 }
 
 /* ── Case Study — Card Panel Design ── */

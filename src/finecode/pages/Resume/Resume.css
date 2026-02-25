@@ -122,6 +122,10 @@
     transition: all 0.3s ease;
 }
 
+.resume-download-btn span {
+    color: var(--background);
+}
+
 .resume-download-btn::before {
     content: '';
     position: absolute;
@@ -142,6 +146,10 @@
     color: var(--color-accent);
     box-shadow: 0 0 20px rgba(50, 221, 208, 0.4), inset 0 0 0 1px var(--color-accent);
     transform: translateY(-2px);
+}
+
+.resume-download-btn:hover span {
+    color: var(--color-accent);
 }
 
 /* Frame segments — default: -bk.svg dark versions */
