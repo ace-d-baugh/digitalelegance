@@ -6,7 +6,7 @@ import './Hero.css'
 function Hero() {
     return (
         <div className="Hero">
-            <div className="searchlights no-animate">
+            <div className="searchlights">
                 <div className="searchlight sl-01"></div>
                 <div className="searchlight sl-02"></div>
                 <div className="searchlight sl-03"></div>
@@ -16,7 +16,7 @@ function Hero() {
                 <h2>Elevate Your <wbr/>Digital&nbsp;Success</h2>
                 <p>Expert&nbsp;full-stack&nbsp;web&nbsp;solutions driving business&nbsp;growth&nbsp;and online&nbsp;success with Digital&nbsp;Elegance.</p>
                 <div className="hero-btn">
-                    <Button text="Hire Me" link="/contact" />
+                    <Button text="Hire Me" link="/finecode/contact" />
                 </div>
             </div>
         </div>

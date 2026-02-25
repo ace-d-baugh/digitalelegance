@@ -1,10 +1,20 @@
 // FineCodeApp.tsx
 
+import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { Header, Footer } from './components/layout'
 import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from './pages/'
 import ScrollToTop from './components/common/ScrollToTop/ScrollToTop'
 import './FineCodeApp.css'
+
+// Scrolls window to top on every route change
+function ScrollToTopOnNavigate() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+  return null;
+}
 
 function FineCodeApp({companyName}: {companyName: string}) {
   const { pathname } = useLocation();
@@ -13,6 +23,7 @@ function FineCodeApp({companyName}: {companyName: string}) {
   return (
     <>
       <div className="App">
+        <ScrollToTopOnNavigate />
         {!isHomepage && <Header logoText={companyName} />}
         <div className={`Routes${isHomepage ? ' home-route' : ''}`}>
           <Routes>
@@ -33,9 +44,3 @@ function FineCodeApp({companyName}: {companyName: string}) {
 }
 
 export default FineCodeApp
-
-// More Information from videos:
-// https://www.youtube.com/watch?v=WgXU7XAZYmQ
-// https://www.youtube.com/watch?v=p5LIqg-oNbs
-// https://www.youtube.com/watch?v=bdqSEBSXBPk
-// https://www.youtube.com/watch?v=HHTHyz1FBNM
