@@ -1,7 +1,7 @@
 // pages/Project/Project.tsx
 
 import { useParams, useNavigate } from 'react-router-dom';
-import Projects from '../../assets/data/projects.json';
+import Projects from '../../../assets/data/projects.json';
 import Carousel from '../../components/common/Carousel/Carousel';
 import Frame from '../../components/common/Frame/Frame';
 import './Project.css';

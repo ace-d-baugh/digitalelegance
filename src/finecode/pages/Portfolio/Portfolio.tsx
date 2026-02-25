@@ -1,5 +1,5 @@
 // pages/Portfolio/Portfolio.tsx
-import Projects from '../../assets/data/projects.json';
+import Projects from '../../../assets/data/projects.json';
 import Card from '../../components/common/Card/Card';
 import './Portfolio.css';
 

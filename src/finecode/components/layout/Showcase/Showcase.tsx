@@ -3,7 +3,7 @@
 // import { useEffect } from "react";
 import Card from "../../common/Card/Card"
 import './Showcase.css'
-import Projects from '../../../assets/data/projects.json'
+import Projects from '../../../../assets/data/projects.json'
 // import LogoScroll from '../LogoScroll/LogoScroll'
 
 

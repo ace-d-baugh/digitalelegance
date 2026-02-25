@@ -1,6 +1,6 @@
 // components/Resume/Work/Work.tsx
 import './Work.css';
-import AllJobs from "../../../../assets/data/work.json";
+import AllJobs from "../../../../../assets/data/work.json";
 
 interface Job {
   id: number;
