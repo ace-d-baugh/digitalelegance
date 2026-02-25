@@ -1,1 +1,430 @@
-/* pages/Project/Project.css */
+/* pages/Project/Project.css — Art Deco dark theme */
+
+.Project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+    background: var(--background);
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ── Not Found ── */
+.project-not-found {
+    justify-content: center;
+}
+
+.not-found-inner {
+    text-align: center;
+    padding: 3rem;
+    border: 1px solid var(--metal-darker);
+}
+
+/* ── Page Header ── */
+.project-page-header {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.project-type-badge {
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    padding: 0.25rem 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-page-header h1 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background: linear-gradient(
+        135deg,
+        var(--metal-darker) 0%,
+        var(--metal) 35%,
+        var(--color-accent) 50%,
+        var(--metal) 65%,
+        var(--metal-darker) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: projectTitleShimmer 3s linear infinite;
+}
+
+@keyframes projectTitleShimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.project-short-desc {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    color: var(--metal-dark);
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+/* ── Carousel with Frame ── */
+.project-carousel-wrap {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 3rem;
+    position: relative;     /* Frame is absolutely positioned inside */
+    padding: 24px;          /* matches --border-width so content clears the frame */
+}
+
+/* Frame override for carousel context */
+.carousel-frame {
+    --border-width: 24px;
+    pointer-events: none;   /* don't block carousel swipe/click interactions */
+    z-index: 2;
+}
+
+/* ── Case Study — Card Panel Design ── */
+.project-case-study {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+.case-card {
+    position: relative;
+    display: flex;
+    background: linear-gradient(160deg, rgba(255,255,255,0.02) 0%, rgba(50,221,208,0.03) 100%);
+    border: 1px solid var(--metal-darker);
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Teal top accent line — reveals on hover */
+.case-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.case-card:hover {
+    border-color: rgba(50, 221, 208, 0.4);
+    transform: translateY(-2px);
+}
+
+.case-card:hover::before {
+    opacity: 1;
+}
+
+/* Roman numeral sidebar */
+.case-card-number {
+    font-family: var(--font-emphasis);
+    font-size: 4rem;
+    line-height: 1;
+    color: rgba(50, 221, 208, 0.08);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 1.5rem 0.75rem;
+    letter-spacing: 0.1rem;
+    flex-shrink: 0;
+    border-right: 1px solid var(--metal-darker);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.case-card:hover .case-card-number {
+    color: rgba(50, 221, 208, 0.2);
+}
+
+.case-card-body {
+    padding: 1.75rem;
+    flex: 1;
+}
+
+.case-card-body h2 {
+    font-family: var(--font-emphasis);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.case-icon {
+    color: var(--color-accent);
+    font-size: 1rem;
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+
+.case-card-body p {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: var(--metal);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Notes card — spans full width */
+.case-card-extra {
+    grid-column: 1 / -1;
+    background: linear-gradient(160deg, rgba(50,221,208,0.02) 0%, rgba(50,221,208,0.05) 100%);
+    border-color: rgba(50, 221, 208, 0.25);
+}
+
+.case-card-extra .case-card-body p {
+    font-style: italic;
+    color: var(--metal-dark);
+}
+
+/* ── Technologies ── */
+.project-technologies {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.project-technologies h2 {
+    font-family: var(--font-emphasis);
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.tech-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--metal-darker);
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    letter-spacing: 0.08rem;
+    color: var(--metal);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.tech-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(50, 221, 208, 0.08),
+        transparent
+    );
+    transition: left 0.45s ease;
+}
+
+.tech-badge:hover::before { left: 100%; }
+
+.tech-badge:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* Devicon i element + fallback span */
+.tech-icon {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    line-height: 1;
+    flex-shrink: 0;
+    opacity: 0.9;
+}
+
+.tech-icon-fallback {
+    font-size: 0.6rem;
+}
+
+.tech-badge:hover .tech-icon {
+    opacity: 1;
+}
+
+.tech-name {
+    color: inherit;
+}
+
+/* ── Links ── */
+.project-links {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 0 1rem 2rem;
+}
+
+.links-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* External link button — art deco clip-path style */
+.project-link-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--color-accent);
+    color: var(--background);
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    clip-path: polygon(
+        10px 0%,
+        calc(100% - 10px) 0%,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0% calc(100% - 10px),
+        0% 10px
+    );
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-link-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.project-link-btn:hover::before { left: 100%; }
+
+.project-link-btn:hover {
+    background: var(--background);
+    color: var(--color-accent);
+    box-shadow: 0 4px 20px rgba(50, 221, 208, 0.35);
+}
+
+.project-link-btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* Back button — minimal ghost style */
+.btn-back {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: var(--metal-dark);
+    background: transparent;
+    border: 1px solid var(--metal-darker);
+    padding: 0.65rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.btn-back:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 768px) {
+    .Project {
+        padding: 3rem 0.5rem;
+    }
+
+    .project-page-header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .project-case-study {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .case-card-number {
+        font-size: 2.5rem;
+        min-width: 48px;
+    }
+
+    .case-card-body {
+        padding: 1.25rem;
+    }
+
+    .project-technologies {
+        padding: 0 0.5rem;
+    }
+
+    .links-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-link-btn {
+        width: 100%;
+        max-width: 240px;
+        text-align: center;
+    }
+}

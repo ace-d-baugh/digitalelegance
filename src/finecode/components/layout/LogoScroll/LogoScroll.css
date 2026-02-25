@@ -2,41 +2,122 @@
 
 .LogoScroll {
     position: relative;
-    max-width: 1600px;
     width: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 0;
     background-color: var(--color-primary);
-    margin: 0 auto;
 }
 
-.logos {
-    display: flex;
-    flex-wrap: nowrap;
+/* Fade edges */
+.LogoScroll::before,
+.LogoScroll::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.LogoScroll::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-primary) 0%, transparent 100%);
+}
+
+.LogoScroll::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-primary) 0%, transparent 100%);
+}
+
+.logos-title {
     width: 100%;
-    animation: scroll 10s linear infinite;
-    will-change: transform; /* Optimize animation performance */
+    font-family: var(--font-emphasis);
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--background);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
 }
 
-.logos:hover {
+.logos-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--color-accent);
+    margin: 0.5rem auto 0;
+}
+
+/*
+  The track contains 4 identical sets.
+  JS measures --one-set-width (width of one set in px).
+  We animate by exactly that distance → at the end,
+  set 2 is where set 1 started = perfect seamless loop.
+  4 sets ensures the screen is always fully covered.
+*/
+.logos-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: max-content;
+    --one-set-width: 9999px; /* safe fallback until JS measures */
+    animation: logoScroll 30s linear infinite;
+    will-change: transform;
+}
+
+.logos-track:hover {
     animation-play-state: paused;
 }
 
-.logos img {
-    margin: 0 20px;
-    flex-shrink: 0;
-    height: 50px;
+/* Each set is a flex row with consistent gap */
+.logos-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1.5rem; /* equal padding left AND right on every set */
 }
 
-/* Seamless scroll animation */
-@keyframes scroll {
-    0% {
-        transform: translateX(0%);
+.logos-item {
+    flex-shrink: 0;
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.7;
+    filter: grayscale(30%);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.logos-item:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/*
+  Animate by exactly ONE set width in pixels.
+  --one-set-width is set by JS after measuring setRef.
+  This works at ANY screen size with NO hardcoded values.
+*/
+@keyframes logoScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--one-set-width))); }
+}
+
+@media screen and (max-width: 768px) {
+    .LogoScroll::before,
+    .LogoScroll::after { width: 60px; }
+
+    .logos-set {
+        gap: 2rem;
+        padding: 0 1rem;
     }
-    100% {
-        transform: translateX(calc(-100% + 335px));
-    }
+
+    .logos-item { height: 36px; }
 }

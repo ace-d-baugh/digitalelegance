@@ -1,24 +1,38 @@
-/* components/Testimonials/Testimonials.css */
+/* components/Testimonials/Testimonials.css - Modern with subtle Deco */
 
 .Testimonials-container {
-    padding: .5rem 0;
+    padding: 4rem 1rem;
+    background: var(--background);
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials h2 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
 }
 
 .testimonials-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.Testimonial {
-    width: 200px;
-    padding: .25rem;
-    margin: 0 auto;
-}
-
-.Testimonial img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+@media screen and (max-width: 768px) {
+    .Testimonials-container { padding: 3rem 1rem; }
+    .testimonials h2 { font-size: 1.5rem; letter-spacing: 0.1rem; }
+    .testimonials-list { grid-template-columns: 1fr; padding: 1rem; }
 }

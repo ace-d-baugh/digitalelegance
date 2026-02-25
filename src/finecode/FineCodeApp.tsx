@@ -1,17 +1,20 @@
 // FineCodeApp.tsx
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import { Header, Footer } from './components/layout'
 import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from './pages/'
+import ScrollToTop from './components/common/ScrollToTop/ScrollToTop'
 import './FineCodeApp.css'
 
 function FineCodeApp({companyName}: {companyName: string}) {
+  const { pathname } = useLocation();
+  const isHomepage = pathname === '/finecode' || pathname === '/finecode/';
 
   return (
     <>
-      <div className="FineCodeApp">
-        <Header logoText = {companyName} />
-        <div className="Routes">
+      <div className="App">
+        {!isHomepage && <Header logoText={companyName} />}
+        <div className={`Routes${isHomepage ? ' home-route' : ''}`}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />}/>
@@ -22,7 +25,8 @@ function FineCodeApp({companyName}: {companyName: string}) {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-        <Footer company = {companyName} />
+        <Footer company={companyName} />
+        <ScrollToTop />
       </div>
     </>
   )
@@ -35,4 +39,3 @@ export default FineCodeApp
 // https://www.youtube.com/watch?v=p5LIqg-oNbs
 // https://www.youtube.com/watch?v=bdqSEBSXBPk
 // https://www.youtube.com/watch?v=HHTHyz1FBNM
-

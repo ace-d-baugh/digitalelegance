@@ -5,10 +5,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .header-background {
@@ -16,7 +17,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--background);
-    background-image: url("/images/backgrounds/deco-diamonds.svg");
+    background-image: url("/src/assets/images/backgrounds/deco-diamonds.svg");
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 50px;
@@ -25,6 +26,28 @@
                 0 0 40px rgba(0, 0, 0, 0.5);
     z-index: 666;
     transform: translateY(-100%);
+}
+
+/* Teal accent bottom border - art deco geometric line */
+.header-background::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--metal-darker) 5%,
+        var(--color-accent) 20%,
+        var(--metal) 50%,
+        var(--color-accent) 80%,
+        var(--metal-darker) 95%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .header-elements {
@@ -83,6 +106,11 @@
 /* Applied When Header is Moved In */
 .moved {
     animation: slideBounceDown 0.6s ease forwards;
+}
+
+/* Show teal accent border when header is visible */
+.moved::after {
+    opacity: 1;
 }
 
 /* Applied When Moved Class Is Removed (via .moving-out) */

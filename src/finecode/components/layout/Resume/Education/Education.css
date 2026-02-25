@@ -1,1 +1,145 @@
-/* components/Resume/Education/Education.css */
+/* components/Resume/Education/Education.css - Dark Art Deco */
+
+.Education {
+    position: relative;
+}
+
+.resume-section-heading {
+    font-family: var(--font-emphasis);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resume-section-heading--sub {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+/* ── Degree cards ── */
+.edu-degrees {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.degree-card {
+    background: rgba(50, 221, 208, 0.06);
+    border: 1px solid rgba(50, 221, 208, 0.2);
+    border-top: 3px solid var(--color-accent);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.degree-card:hover {
+    background: rgba(50, 221, 208, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(50, 221, 208, 0.15);
+}
+
+.degree-date {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.degree-title {
+    font-family: var(--font-primary);
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.degree-school {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    opacity: 0.85;
+    margin-bottom: 1rem;
+}
+
+.degree-location {
+    color: var(--color-primary);
+    opacity: 0.5;
+    font-size: 0.85rem;
+}
+
+.degree-accolades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.accolade-badge {
+    font-family: var(--font-primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    padding: 0.2rem 0.75rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+/* ── Cert grid ── */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.cert-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(50, 221, 208, 0.1);
+    border-left: 3px solid rgba(50, 221, 208, 0.4);
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    background: rgba(50, 221, 208, 0.06);
+    border-left-color: var(--color-accent);
+    transform: translateX(3px);
+}
+
+.cert-date {
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.8;
+}
+
+.cert-title {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+}
+
+.cert-school {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .cert-grid { grid-template-columns: 1fr; }
+    .degree-title { font-size: 1rem; }
+}

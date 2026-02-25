@@ -5,51 +5,49 @@ import './Header.css';
 import Logo from '../Logo/Logo';
 import Navbar from '../Navbar/Navbar';
 
-function Header({ logoText }: { logoText: string }) {
-	const backgroundRef = useRef<HTMLDivElement>(null);
-	const [hasMoved, setHasMoved] = useState(false);
+interface HeaderProps {
+  logoText: string;
+}
 
-	useEffect(() => {
-	const bg = backgroundRef.current;
-	if (!bg) return;
+function Header({ logoText }: HeaderProps) {
+  const backgroundRef = useRef<HTMLDivElement>(null);
+  const [hasMoved, setHasMoved] = useState(false);
 
-	const handleScroll = () => {
-		const scrolledDown = window.scrollY > 0;
+  useEffect(() => {
+    const bg = backgroundRef.current;
+    if (!bg) return;
 
-		if (scrolledDown && !hasMoved) {
-			bg.classList.remove('moving-out');
-			bg.classList.add('moved');
-			setHasMoved(true);
-		} else if (!scrolledDown && hasMoved) {
-			// Remove .moved before applying .moving-out
-			bg.classList.remove('moved');
+    const handleScroll = () => {
+      const scrolledDown = window.scrollY > 0;
 
-			// 🔧 Force a reflow to re-trigger animation
-			void bg.offsetWidth;
+      if (scrolledDown && !hasMoved) {
+        bg.classList.remove('moving-out');
+        bg.classList.add('moved');
+        setHasMoved(true);
+      } else if (!scrolledDown && hasMoved) {
+        bg.classList.remove('moved');
+        void bg.offsetWidth;
+        bg.classList.add('moving-out');
+        setHasMoved(false);
+        setTimeout(() => {
+          bg.classList.remove('moving-out');
+        }, 600);
+      }
+    };
 
-			bg.classList.add('moving-out');
-			setHasMoved(false);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [hasMoved]);
 
-			// Remove after animation finishes
-			setTimeout(() => {
-				bg.classList.remove('moving-out');
-			}, 600);
-		}
-	};
-
-	window.addEventListener('scroll', handleScroll);
-	return () => window.removeEventListener('scroll', handleScroll);
-}, [hasMoved]);
-
-	return (
-		<header className="Header">
-			<div className="header-background" ref={backgroundRef}></div>
-			<div className="header-elements">
-				<Logo logoText={logoText} />
-				<Navbar />
-			</div>
-		</header>
-	);
+  return (
+    <header className="Header">
+      <div className="header-background" ref={backgroundRef}></div>
+      <div className="header-elements">
+        <Logo logoText={logoText} />
+        <Navbar />
+      </div>
+    </header>
+  );
 }
 
 export default Header;

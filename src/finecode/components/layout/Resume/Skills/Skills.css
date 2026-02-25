@@ -1,52 +1,79 @@
-/* components/Resume/Skills/Skills.css */
+/* components/Resume/Skills/Skills.css - Dark Art Deco */
 
 .Skills {
-    width: 100%;
-    background: var(--color-primary);
-    color: var(--background);
-    padding: .5rem 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.Skills h2 {
-    color: var(--background);
-}
-
-.Skills li {
-    list-style: none;
-    color: var(--background);
-    font-size: larger;
-}
-
-.divider {
-    width: 5px;
-    height: 85%;
-    background: var(--background);
-    margin: 1rem 0;
-}
-
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
-
-.center {
-    text-align: center;
-    font-size: smaller;
+.Skills .resume-section-heading {
+    font-family: var(--font-emphasis);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 2rem;
 }
 
 .skills-display-lg {
     display: grid;
-    grid-template-columns: 1fr 5px 1fr;
-    max-width: 1200px;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .skills-display-lg ul {
-    padding: 1rem;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.skills-display-lg li,
+.skills-display-sm li {
+    list-style: none;
+    padding: 0.85rem 1.5rem;
+    background: rgba(50, 221, 208, 0.05);
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    border-left: 3px solid var(--color-accent);
+    transition: all 0.3s ease;
+    letter-spacing: 0.03rem;
+}
+
+.skills-display-lg li:hover,
+.skills-display-sm li:hover {
+    transform: translateX(5px);
+    background: rgba(50, 221, 208, 0.1);
+    border-left-width: 5px;
+    color: var(--color-accent);
+}
+
+.skills-display-lg .left {
+    text-align: left;
+}
+
+.skills-display-lg .right {
+    text-align: right;
+    border-left: none;
+    border-right: 3px solid var(--color-accent);
+}
+
+.skills-display-lg .right:hover {
+    transform: translateX(-5px);
+}
+
+.divider {
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--color-accent), transparent);
+    align-self: stretch;
+    opacity: 0.4;
+    margin: 0 0.5rem;
 }
 
 .skills-display-sm {
@@ -54,19 +81,40 @@
 }
 
 @media screen and (max-width: 768px) {
+    .Skills .resume-section-heading { padding-left: 1rem; }
+    .skills-display-lg { display: none; }
     .skills-display-sm {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: .5rem;
+        gap: 0.5rem;
+        padding: 0 0.5rem;
     }
-
-    .Skills li {
-        margin: -0.25rem;
-    }
-
-    .skills-display-lg {
-        display: none;
-    }
+    .skills-display-sm li { text-align: center; border-left: none; border-bottom: 2px solid var(--color-accent); }
+    .skills-display-sm li:hover { transform: translateY(-2px); }
 }
+
+/* ── Fly-in animations (logic in TSX) ── */
+.fly-from-left {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease;
+}
+
+.fly-from-right {
+    opacity: 0;
+    transform: translateX(120px);
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease;
+}
+
+.fly-from-left.is-visible,
+.fly-from-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+    transition-delay: 0s;
+}
+
+.skills-display-lg li.right.is-visible:hover { transform: translateX(-5px); }
+.skills-display-lg li.left.is-visible:hover,
+.skills-display-sm li.is-visible:hover { transform: translateX(5px); }
+.skills-display-sm li.is-visible:hover { transform: translateY(-2px); }

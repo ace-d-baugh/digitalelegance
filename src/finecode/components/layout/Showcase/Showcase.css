@@ -1,21 +1,46 @@
-/* components/Showcase/Showcase.css */
+/* components/Showcase/Showcase.css - Modern with subtle Deco */
 
 .Showcase {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: .5rem 0;
+    padding: 4rem 1rem;
+    background: var(--background);
+}
+
+.Showcase h2 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-    .Showcase .Card {
-        margin: 0;
+    .Showcase {
+        padding: 3rem 1rem;
+    }
+    
+    .Showcase h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.5rem;
     }
 }

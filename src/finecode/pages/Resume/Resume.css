@@ -1,1 +1,171 @@
-/* pages/Resume/Resume.css */
+/* pages/Resume/Resume.css - Dark Art Deco Theme */
+
+.Resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 4rem 1rem 6rem;
+    background: var(--background);
+    min-height: 100vh;
+}
+
+/* ── Page Header ── */
+.resume-page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resume-overline {
+    font-family: var(--font-emphasis);
+    font-size: 0.85rem;
+    letter-spacing: 0.4rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.resume-title {
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    letter-spacing: 0.4rem;
+    margin: 0 0 1rem;
+    /* Metallic shimmer */
+    background: linear-gradient(
+        135deg,
+        var(--metal-darker) 0%,
+        var(--metal) 35%,
+        var(--color-accent) 50%,
+        var(--metal) 65%,
+        var(--metal-darker) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: resumeTitleShimmer 4s linear infinite;
+}
+
+@keyframes resumeTitleShimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.resume-deco-line {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    margin: 0 auto;
+}
+
+/* ── Main content wrapper ── */
+.resume-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ── Art Deco section dividers ── */
+.resume-deco-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0;
+    color: var(--color-accent);
+    font-size: 1.2rem;
+}
+
+.resume-deco-divider::before,
+.resume-deco-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    opacity: 0.4;
+}
+
+/* ── Download Button ── */
+.resume-download {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.resume-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem 3rem;
+    background: var(--color-accent);
+    color: var(--background);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(
+        10px 0%,
+        calc(100% - 10px) 0%,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0% calc(100% - 10px),
+        0% 10px
+    );
+    transition: all 0.3s ease;
+}
+
+.resume-download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+    transition: left 0.5s ease;
+}
+
+.resume-download-btn:hover::before {
+    left: 100%;
+}
+
+.resume-download-btn:hover {
+    background: var(--background);
+    color: var(--color-accent);
+    box-shadow: 0 0 20px rgba(50, 221, 208, 0.4), inset 0 0 0 1px var(--color-accent);
+    transform: translateY(-2px);
+}
+
+/* Frame segments — default: -bk.svg dark versions */
+.resume-download-btn .frame-container .top-left    { background-image: url("/src/assets/images/frames/top-start-photo-bk.svg"); }
+.resume-download-btn .frame-container .top-center  { background-image: url("/src/assets/images/frames/top-photo-bk.svg"); }
+.resume-download-btn .frame-container .top-right   { background-image: url("/src/assets/images/frames/top-end-photo-bk.svg"); }
+.resume-download-btn .frame-container .left-center { background-image: url("/src/assets/images/frames/start-photo-bk.svg"); }
+.resume-download-btn .frame-container .right-center{ background-image: url("/src/assets/images/frames/end-photo-bk.svg"); }
+.resume-download-btn .frame-container .bottom-left { background-image: url("/src/assets/images/frames/bottom-start-photo-bk.svg"); }
+.resume-download-btn .frame-container .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo-bk.svg"); }
+.resume-download-btn .frame-container .bottom-right{ background-image: url("/src/assets/images/frames/bottom-end-photo-bk.svg"); }
+
+/* Hover: swap to regular light versions */
+.resume-download-btn:hover .frame-container .top-left    { background-image: url("/src/assets/images/frames/top-start-photo.svg"); }
+.resume-download-btn:hover .frame-container .top-center  { background-image: url("/src/assets/images/frames/top-photo.svg"); }
+.resume-download-btn:hover .frame-container .top-right   { background-image: url("/src/assets/images/frames/top-end-photo.svg"); }
+.resume-download-btn:hover .frame-container .left-center { background-image: url("/src/assets/images/frames/start-photo.svg"); }
+.resume-download-btn:hover .frame-container .right-center{ background-image: url("/src/assets/images/frames/end-photo.svg"); }
+.resume-download-btn:hover .frame-container .bottom-left { background-image: url("/src/assets/images/frames/bottom-start-photo.svg"); }
+.resume-download-btn:hover .frame-container .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo.svg"); }
+.resume-download-btn:hover .frame-container .bottom-right{ background-image: url("/src/assets/images/frames/bottom-end-photo.svg"); }
+
+@media screen and (max-width: 768px) {
+    .Resume { padding: 3rem 0.75rem 4rem; }
+    .resume-deco-divider { margin: 2rem 0; }
+    .resume-download-btn { padding: 1.25rem 2rem; font-size: 0.9rem; }
+}

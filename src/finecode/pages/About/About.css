@@ -1,1 +1,654 @@
-/* pages/About/About.css */
+/* pages/About/About.css - Art Deco Theme */
+
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 3rem 1.5rem 6rem;
+    background: var(--background);
+    min-height: 100vh;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* =====================
+   HERO HEADING
+   ===================== */
+.about-hero {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.About h1 {
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.4rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    background: linear-gradient(
+        135deg,
+        var(--metal-darker) 0%,
+        var(--color-primary) 40%,
+        #fff 60%,
+        var(--color-primary) 80%,
+        var(--metal-dark) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-title-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.ornament-line {
+    flex: 1;
+    max-width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-accent));
+}
+
+.ornament-line:last-child {
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+}
+
+.ornament-diamond {
+    color: var(--color-accent);
+    font-size: 0.75rem;
+}
+
+.ornament-label {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--metal-dark);
+}
+
+/* =====================
+   SECTIONS
+   ===================== */
+.about-section {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-header h3 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    white-space: nowrap;
+    margin: 0;
+}
+
+.section-header .section-header-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--metal-darker));
+}
+
+.section-header .section-header-line:first-child {
+    background: linear-gradient(90deg, var(--metal-darker), transparent);
+}
+
+/* =====================
+   DECO DIVIDER
+   ===================== */
+.deco-divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.deco-divider::before,
+.deco-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--metal-darker), transparent);
+}
+
+.deco-divider-inner {
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+/* =====================
+   INTRODUCTION CARD
+   ===================== */
+.intro-card {
+    border-left: 3px solid var(--color-accent);
+    padding: 1.5rem 2rem;
+    background: rgba(50, 221, 208, 0.03);
+    border-top: 1px solid rgba(50, 221, 208, 0.15);
+    border-bottom: 1px solid rgba(50, 221, 208, 0.15);
+    border-right: 1px solid rgba(50, 221, 208, 0.08);
+}
+
+.intro-card p {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--metal-dark);
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.intro-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* =====================
+   JOURNEY TIMELINE
+   ===================== */
+.journey-timeline {
+    position: relative;
+    padding-left: 0;
+    width: 100%;
+}
+
+.journey-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7.5rem;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        var(--color-accent) 10%,
+        var(--color-accent) 90%,
+        transparent
+    );
+    opacity: 0.4;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 1.5rem;
+    padding-top: 0.25rem;
+    gap: 0.35rem;
+    position: relative;
+}
+
+.timeline-dot {
+    color: var(--color-accent);
+    font-size: 0.65rem;
+    position: absolute;
+    right: -0.35rem;
+    top: 0.3rem;
+    background: var(--background);
+    padding: 2px;
+    line-height: 1;
+}
+
+.timeline-date {
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--color-accent);
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 0.1rem;
+}
+
+.timeline-content {
+    padding-bottom: 1rem;
+}
+
+.timeline-content h4 {
+    font-family: var(--font-emphasis);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.timeline-institution {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05rem;
+}
+
+.timeline-content p {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--metal-dark);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-accolades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.accolade {
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    letter-spacing: 0.08rem;
+    color: var(--metal-darker);
+    text-transform: uppercase;
+}
+
+/* =====================
+   ACHIEVEMENTS GRID
+   ===================== */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.achievement-card {
+    border: 1px solid rgba(145, 145, 145, 0.25);
+    border-top: 3px solid var(--color-accent);
+    padding: 1.5rem;
+    background: rgba(50, 221, 208, 0.02);
+    transition: border-color 0.3s ease, background 0.3s ease;
+    position: relative;
+}
+
+.achievement-card::before,
+.achievement-card::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-color: var(--metal-darker);
+    border-style: solid;
+    opacity: 0.5;
+}
+
+.achievement-card::before {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 1px 1px;
+}
+
+.achievement-card::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 1px 1px 0;
+}
+
+.achievement-card:hover {
+    border-color: var(--metal-dark);
+    border-top-color: var(--color-accent);
+    background: rgba(50, 221, 208, 0.05);
+}
+
+.achievement-icon {
+    font-size: 1.75rem;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.achievement-card h4 {
+    font-family: var(--font-emphasis);
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-card p {
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    color: var(--metal-dark);
+    line-height: 1.7;
+}
+
+/* =====================
+   SKILLS GRID
+   ===================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.skill-card {
+    border: 1px solid rgba(97, 97, 97, 0.3);
+    border-top: 2px solid var(--color-accent);
+    padding: 1.25rem;
+    background: rgba(0, 0, 19, 0.5);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    border-color: var(--metal-darker);
+    border-top-color: var(--color-accent);
+    background: rgba(50, 221, 208, 0.03);
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card h4 {
+    font-family: var(--font-emphasis);
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-card ul li {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--metal-dark);
+    line-height: 1.7;
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.15rem;
+}
+
+.skill-card ul li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: 0.45rem;
+    top: 0.35rem;
+}
+
+/* =====================
+   VALUES & MISSION
+   ===================== */
+.values-quote {
+    position: relative;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    border-left: 2px solid rgba(50, 221, 208, 0.3);
+    border-right: 2px solid rgba(50, 221, 208, 0.3);
+}
+
+.values-quote::before {
+    content: '“';
+    font-family: Georgia, serif;
+    font-size: 6rem;
+    color: var(--color-accent);
+    opacity: 0.15;
+    position: absolute;
+    top: -1.5rem;
+    left: 0.5rem;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.values-quote p {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--metal-dark);
+    line-height: 1.9;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.values-quote p:last-child {
+    margin-bottom: 0;
+}
+
+.values-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.value-pillar {
+    text-align: center;
+    padding: 1.25rem 1rem;
+    border: 1px solid rgba(97, 97, 97, 0.25);
+    position: relative;
+}
+
+.pillar-symbol {
+    display: block;
+    font-size: 1.25rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.value-pillar h4 {
+    font-family: var(--font-emphasis);
+    font-size: 0.85rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.value-pillar p {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--metal-dark);
+    line-height: 1.6;
+}
+
+/* =====================
+   PERSONAL / HOBBIES
+   ===================== */
+.personal-intro {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: var(--metal-dark);
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.hobby-card {
+    text-align: center;
+    padding: 1.5rem 0.75rem;
+    border: 1px solid rgba(97, 97, 97, 0.3);
+    position: relative;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 19, 0.3);
+}
+
+.hobby-card::before,
+.hobby-card::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-color: var(--color-accent);
+    border-style: solid;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hobby-card::before {
+    top: 0;
+    left: 0;
+    border-width: 1px 0 0 1px;
+}
+
+.hobby-card::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 1px 1px 0;
+}
+
+.hobby-card:hover {
+    border-color: var(--metal-darker);
+    background: rgba(50, 221, 208, 0.04);
+}
+
+.hobby-card:hover::before,
+.hobby-card:hover::after {
+    opacity: 1;
+}
+
+.hobby-icon {
+    font-size: 2rem;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.hobby-card h4 {
+    font-family: var(--font-emphasis);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.hobby-card p {
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    color: var(--metal-darker);
+    line-height: 1.5;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media screen and (max-width: 768px) {
+    .About {
+        padding: 3rem 1rem 4rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-pillars {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .journey-timeline::before {
+        left: 5.5rem;
+    }
+
+    .timeline-item {
+        grid-template-columns: 6rem 1fr;
+        gap: 1rem;
+    }
+
+    .intro-card {
+        padding: 1rem 1.25rem;
+    }
+
+    .values-quote {
+        padding: 1.5rem 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .journey-timeline::before {
+        display: none;
+    }
+
+    .timeline-marker {
+        flex-direction: row;
+        align-items: center;
+        padding-right: 0;
+        gap: 0.5rem;
+    }
+
+    .timeline-dot {
+        position: static;
+        background: none;
+    }
+
+    .timeline-date {
+        text-align: left;
+    }
+
+    .section-header h3 {
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+    }
+}

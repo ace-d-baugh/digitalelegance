@@ -1,14 +1,13 @@
 // components/Resume/Summary/Summary.tsx
-
 import './Summary.css';
 
 function Summary() {
-	return (
-		<nav className="Summary">
-			<h3>Professional Summary</h3>
-			<p>Professional web design specialist with strong focus on creating impactful, user-friendly, and visually compelling digital experiences. Skilled in HTML, CSS, JavaScript, and Adobe Creative Suite, with a keen eye for design aesthetics and usability. Proven track record of transforming client requirements into engaging digital experiences, with a passion for collaboration and adapting to evolving project needs, consistently delivering high-quality results.</p>
-		</nav>
-	);
+  return (
+    <div className="Resume-Summary">
+      <h2 className="resume-section-heading"><span className="section-icon">◈</span> Professional Summary</h2>
+      <p>Creative and results-driven Full-Stack &amp; Front-End Developer with 17+ years of professional experience designing, building, and maintaining impactful digital experiences. Proven ability to transform complex client requirements into elegant, user-centric solutions using modern web technologies including React, TypeScript, Node.js, and Angular. Strong communicator and collaborative team player with a track record of delivering under tight deadlines — demonstrated through high-visibility projects at The Walt Disney Company serving thousands of Cast Members globally. Passionate about clean architecture, accessible design, and continuously evolving with the industry.</p>
+    </div>
+  );
 }
 
 export default Summary;

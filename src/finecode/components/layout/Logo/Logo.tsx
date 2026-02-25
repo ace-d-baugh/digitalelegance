@@ -9,7 +9,7 @@ function Logo({ logoText }: { logoText: string }) {
 
 	return (
 		<div className="Logo">
-			<Link to="/finecode">
+			<Link to="/">
 				<div className="logoArray">
 					<h1>{logoArray[0]}</h1>
 					<h1>{logoArray[1]}</h1>
