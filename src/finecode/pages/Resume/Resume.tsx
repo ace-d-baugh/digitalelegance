@@ -42,7 +42,7 @@ function Resume() {
 
       <div className="resume-download">
         <a
-          href="/resume.pdf"
+          href="/ace-d-baugh-resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="resume-download-btn"
