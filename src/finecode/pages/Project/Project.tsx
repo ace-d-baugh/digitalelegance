@@ -28,7 +28,7 @@ interface Project {
 // Devicon CSS class strings — 'plain' variants for single-color theming
 const techIconMap: Record<string, string> = {
     'React':        'devicon-react-original',
-    'Angular':      'devicon-angularjs-plain',
+    'Angular':      'devicon-angular-plain',
     'Node.js':      'devicon-nodejs-plain',
     'Express':      'devicon-express-original',
     'MongoDB':      'devicon-mongodb-plain',
@@ -48,6 +48,11 @@ const techIconMap: Record<string, string> = {
     'Git':          'devicon-git-plain',
     'SoapUI':       '',   // no devicon — use fallback
     'Swagger':      'devicon-swagger-plain',
+};
+
+// Custom SVG icons for technologies not in devicon
+const customIconMap: Record<string, string> = {
+    'Generative AI': '/images/icons/generative-ai.svg',
 };
 
 function Project() {
@@ -134,9 +139,11 @@ function Project() {
                 <ul className="tech-list">
                     {project.technologies.map((tech: string) => (
                         <li key={tech} className="tech-badge">
-                            {techIconMap[tech]
-                                ? <i className={`tech-icon ${techIconMap[tech]}`}></i>
-                                : <span className="tech-icon tech-icon-fallback">◆</span>
+                            {customIconMap[tech]
+                                ? <img className="tech-icon tech-icon-svg" src={customIconMap[tech]} alt={tech} />
+                                : techIconMap[tech]
+                                    ? <i className={`tech-icon ${techIconMap[tech]}`}></i>
+                                    : <span className="tech-icon tech-icon-fallback">◆</span>
                             }
                             <span className="tech-name">{tech}</span>
                         </li>

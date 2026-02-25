@@ -279,6 +279,18 @@
     opacity: 0.9;
 }
 
+.tech-icon-svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    filter: invert(78%) sepia(47%) saturate(400%) hue-rotate(130deg) brightness(95%);
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+.tech-badge:hover .tech-icon-svg {
+    opacity: 1;
+}
+
 .tech-icon-fallback {
     font-size: 0.6rem;
 }

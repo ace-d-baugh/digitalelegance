@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Central hub -->
+  <circle cx="50" cy="50" r="8" fill="currentColor" opacity="0.9"/>
+  <!-- Outer nodes -->
+  <circle cx="50" cy="12" r="5" fill="currentColor" opacity="0.7"/>
+  <circle cx="50" cy="88" r="5" fill="currentColor" opacity="0.7"/>
+  <circle cx="12" cy="50" r="5" fill="currentColor" opacity="0.7"/>
+  <circle cx="88" cy="50" r="5" fill="currentColor" opacity="0.7"/>
+  <circle cx="23" cy="23" r="5" fill="currentColor" opacity="0.7"/>
+  <circle cx="77" cy="23" r="5" fill="currentColor" opacity="0.7"/>
+  <circle cx="23" cy="77" r="5" fill="currentColor" opacity="0.7"/>
+  <circle cx="77" cy="77" r="5" fill="currentColor" opacity="0.7"/>
+  <!-- Connections from center to outer nodes -->
+  <line x1="50" y1="42" x2="50" y2="17" opacity="0.6"/>
+  <line x1="50" y1="58" x2="50" y2="83" opacity="0.6"/>
+  <line x1="42" y1="50" x2="17" y2="50" opacity="0.6"/>
+  <line x1="58" y1="50" x2="83" y2="50" opacity="0.6"/>
+  <line x1="44" y1="44" x2="27" y2="27" opacity="0.6"/>
+  <line x1="56" y1="44" x2="73" y2="27" opacity="0.6"/>
+  <line x1="44" y1="56" x2="27" y2="73" opacity="0.6"/>
+  <line x1="56" y1="56" x2="73" y2="73" opacity="0.6"/>
+  <!-- Cross connections (deco lattice) -->
+  <line x1="50" y1="17" x2="27" y2="27" opacity="0.3"/>
+  <line x1="50" y1="17" x2="73" y2="27" opacity="0.3"/>
+  <line x1="50" y1="83" x2="27" y2="73" opacity="0.3"/>
+  <line x1="50" y1="83" x2="73" y2="73" opacity="0.3"/>
+  <line x1="17" y1="50" x2="27" y2="27" opacity="0.3"/>
+  <line x1="17" y1="50" x2="27" y2="73" opacity="0.3"/>
+  <line x1="83" y1="50" x2="73" y2="27" opacity="0.3"/>
+  <line x1="83" y1="50" x2="73" y2="73" opacity="0.3"/>
+</svg>
