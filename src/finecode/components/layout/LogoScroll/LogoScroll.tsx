@@ -5,15 +5,15 @@ import './LogoScroll.css'
 
 function LogoScroll() {
     const logos = [
-        { src: "/src/assets/images/logos/disney.png", alt: "The Walt Disney Company" },
-        { src: "/src/assets/images/logos/carmike.png", alt: "Carmike Cinemas" },
-        { src: "/src/assets/images/logos/rfinity.png", alt: "RFinity" },
-        { src: "/src/assets/images/logos/schwans.png", alt: "Schwan Food Co" },
-        { src: "/src/assets/images/logos/blockbuster.png", alt: "Blockbuster" },
-        { src: "/src/assets/images/logos/misys.png", alt: "Misys" },
-        { src: "/src/assets/images/logos/magnus.png", alt: "First Magnus" },
-        { src: "/src/assets/images/logos/sears.png", alt: "Sears" },
-        { src: "/src/assets/images/logos/kbtoys.png", alt: "KB Toys" },
+        { src: "/images/logos/disney.png", alt: "The Walt Disney Company" },
+        { src: "/images/logos/carmike.png", alt: "Carmike Cinemas" },
+        { src: "/images/logos/rfinity.png", alt: "RFinity" },
+        { src: "/images/logos/schwans.png", alt: "Schwan Food Co" },
+        { src: "/images/logos/blockbuster.png", alt: "Blockbuster" },
+        { src: "/images/logos/misys.png", alt: "Misys" },
+        { src: "/images/logos/magnus.png", alt: "First Magnus" },
+        { src: "/images/logos/sears.png", alt: "Sears" },
+        { src: "/images/logos/kbtoys.png", alt: "KB Toys" },
     ];
 
     const setRef = useRef<HTMLDivElement>(null);
