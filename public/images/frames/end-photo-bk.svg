@@ -1,0 +1,7 @@
+<svg id="end-photo" xmlns="http://www.w3.org/2000/svg" width="816" height="100" fill="none">
+  <rect id="background" x="0" y="0" width="816" height="100" fill="none"/>
+  <rect id="line-01" x="488" y="0" width="32" height="100" fill="#000013"/>
+  <rect id="line-02" x="588" y="0" width="32" height="100" fill="#000013"/>
+  <rect id="line-03" x="688" y="0" width="32" height="100" fill="#000013"/>
+  <rect id="line-04" x="788" y="0" width="32" height="100" fill="#000013"/>
+</svg>

@@ -6,7 +6,7 @@ import './Hero.css'
 function Hero() {
     return (
         <div className="Hero">
-            <div className="searchlights no-animate">
+            <div className="searchlights">
                 <div className="searchlight sl-01"></div>
                 <div className="searchlight sl-02"></div>
                 <div className="searchlight sl-03"></div>

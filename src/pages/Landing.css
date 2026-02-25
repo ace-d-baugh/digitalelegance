@@ -1,41 +1,218 @@
+/* =================================================
+   LANDING PAGE  —  Art Deco Portal
+   Digital Elegance Design System
+   ================================================= */
+
 .landing-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.landing-inner {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
-  padding: 2rem;
 }
 
-.landing-container h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.choices {
+/* Ornaments */
+.landing-ornament {
   display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin: 1.25rem 0;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+}
+.landing-ornament--sm     { margin: 1rem 0 0.5rem; opacity: 0.7; }
+.landing-ornament--bottom { margin-top: 2rem; opacity: 0.5; }
+
+.landing-orn-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent) 30%, var(--color-accent) 70%, transparent);
+  opacity: 0.6;
+}
+.landing-orn-diamonds { white-space: nowrap; font-size: 0.6rem; letter-spacing: 0.4em; }
+
+/* Typography */
+.landing-eyebrow {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  font-variant: small-caps;
+  letter-spacing: 0.35em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin: 0 0 0.4rem;
+  opacity: 0.85;
+}
+
+.landing-title {
+  font-family: var(--font-emphasis);
+  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--metal);
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 0 0 30px rgba(50,221,208,0.2), 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.landing-rule {
+  width: 80%;
+  max-width: 340px;
+  height: 1px;
+  margin: 0.75rem auto;
+  background: linear-gradient(90deg, transparent, var(--metal-dark) 20%, var(--color-accent) 50%, var(--metal-dark) 80%, transparent);
+}
+
+.landing-subtitle {
+  font-family: var(--font-emphasis);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: var(--metal-dark);
+  font-style: italic;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.landing-choose {
+  font-family: var(--font-primary);
+  font-size: 0.7rem;
+  font-variant: small-caps;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0.25rem 0 1.25rem;
+  opacity: 0.75;
+}
+
+/* Cards Layout */
+.landing-choices {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.choice-card {
-  padding: 2rem;
-  border: 2px solid #646cff;
-  border-radius: 8px;
+/* Card Base */
+.landing-card {
+  position: relative;
+  min-width: 220px;
+  flex: 1;
+  max-width: 260px;
+  padding: 2rem 1.5rem;
+  background: rgba(0, 0, 19, 0.72);
+  border: 1px solid var(--metal-darker);
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-width: 250px;
+  display: block;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
 }
 
-.choice-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(100, 108, 255, 0.3);
+.landing-card:not(.landing-card--coming-soon):hover {
+  border-color: var(--color-accent);
+  background: rgba(50, 221, 208, 0.06);
+  box-shadow: 0 0 18px rgba(50,221,208,0.25), 0 0 40px rgba(50,221,208,0.08), inset 0 0 12px rgba(50,221,208,0.04);
+  transform: translateY(-4px);
 }
 
-.choice-card h2 {
-  margin-bottom: 0.5rem;
+.landing-card:not(.landing-card--coming-soon):hover .landing-card-corner {
+  border-color: var(--color-accent);
+  opacity: 1;
+}
+
+.landing-card--coming-soon {
+  opacity: 0.42;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Art Deco Corner Brackets */
+.landing-card-corner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-color: var(--metal-darker);
+  border-style: solid;
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+.landing-card-corner--tl { top: 6px;    left: 6px;   border-width: 2px 0 0 2px; }
+.landing-card-corner--tr { top: 6px;    right: 6px;  border-width: 2px 2px 0 0; }
+.landing-card-corner--bl { bottom: 6px; left: 6px;   border-width: 0 0 2px 2px; }
+.landing-card-corner--br { bottom: 6px; right: 6px;  border-width: 0 2px 2px 0; }
+
+/* Card Inner Content */
+.landing-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.landing-card-icon {
+  font-size: 2rem;
+  color: var(--color-accent);
+  line-height: 1;
+  opacity: 0.9;
+  font-family: monospace;
+  letter-spacing: -0.05em;
+}
+
+.landing-card-title {
+  font-family: var(--font-emphasis);
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--metal);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.landing-card-rule {
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--metal-darker) 20%, var(--color-accent) 50%, var(--metal-darker) 80%, transparent);
+  margin: 0.15rem auto;
+  opacity: 0.7;
+}
+
+.landing-card-desc {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  color: var(--metal-dark);
+  line-height: 1.55;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+.landing-card-badge {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  font-family: var(--font-primary);
+  font-size: 0.62rem;
+  font-variant: small-caps;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  opacity: 0.75;
+}
+
+/* Responsive */
+@media (max-width: 540px) {
+  .landing-choices { flex-direction: column; align-items: center; }
+  .landing-card    { max-width: 100%; width: 100%; }
+  .landing-title   { font-size: 2.2rem; }
 }

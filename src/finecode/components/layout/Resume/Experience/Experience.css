@@ -1,1 +1,34 @@
-/* components/Resume/Experience/Experience.css */
+/* components/Resume/Experience/Experience.css - Dark Art Deco */
+
+.Experience {
+    position: relative;
+}
+
+.resume-section-heading {
+    font-family: var(--font-emphasis);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.placeholder-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px dashed rgba(50, 221, 208, 0.2);
+    padding: 2rem;
+    text-align: center;
+}
+
+.placeholder-text {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: var(--color-primary);
+    opacity: 0.4;
+    font-style: italic;
+    margin: 0;
+    letter-spacing: 0.05rem;
+}

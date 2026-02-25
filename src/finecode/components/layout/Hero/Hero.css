@@ -1,142 +1,180 @@
-/* components/Hero/Hero.css */
+/* components/Hero/Hero.css - Modern with subtle Deco */
 
 .Hero {
-	min-height: 800px;
-	position: relative;
-	display: flex;
+    min-height: 80vh;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    z-index: 999;
 }
 
 .hero-content {
-	position: absolute;
-	width: 100%;
-	flex-direction: column;
-	bottom: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
-	padding: 2rem;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    text-align: center;
+    z-index: 10;
 }
 
-.searchlights {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-}
+.hero-content h2 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 0.15rem;
 
-.searchlight {
-	position: absolute;
-	height: 100%;
-	width: 80px;
-	transform-origin: bottom center;
-	background-image: url('/src/assets/images/backgrounds/searchlight.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	transform: translateX(-50%) rotate(-45deg);
-}
+    /* Metallic shimmer gradient with bright white flash */
+    background: linear-gradient(
+        110deg,
+        var(--metal-darker) 0%,
+        var(--metal) 25%,
+        var(--color-accent) 40%,
+        #ffffff 50%,
+        var(--color-accent) 60%,
+        var(--metal) 75%,
+        var(--metal-darker) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 300% auto;
 
-.searchlight.sl-01,
-.searchlight.sl-03 {
-	animation: animateSearchlightsLeft ease-in-out infinite;
-}
-
-.searchlight.sl-02,
-.searchlight.sl-04 {
-	animation: animateSearchlightsRight ease-in-out infinite;
-}
-
-@keyframes animateSearchlightsLeft {
-	0% {
-		transform: translateX(-50%) rotate(-45deg);
-	}
-	50% {
-		transform: translateX(-50%) rotate(45deg);
-	}
-	100% {
-		transform: translateX(-50%) rotate(-45deg);
-	}
-}
-@keyframes animateSearchlightsRight {
-	0% {
-		transform: translateX(-50%) rotate(45deg);
-	}
-	50% {
-		transform: translateX(-50%) rotate(-45deg);
-	}
-	100% {
-		transform: translateX(-50%) rotate(45deg);
-	}
-}
-
-.searchlight::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 80px;
-	height: 10px;
-	background-image: linear-gradient(to bottom, var(--color-primary), transparent);
-	border-radius: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.searchlight::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 20px;
-	height: 20px;
-	background: var(--color-primary);
-	border-radius: 50%;
-	transform: translate(-50%, 50%);
-}
-
-.searchlight.sl-01 {
-	bottom: 0;
-	left: 20%;
-	animation-delay: 0.9s;
-	animation-duration: 29s;
-}
-
-.searchlight.sl-02 {
-	bottom: 0;
-	left: 40%;
-	animation-delay: 0s;
-	animation-duration: 30s;
-}
-
-.searchlight.sl-03 {
-	bottom: 0;
-	left: 60%;
-	animation-delay: 0.3s;
-	animation-duration: 31s;
-}
-
-.searchlight.sl-04 {
-	bottom: 0;
-	left: 80%;
-	animation-delay: 0s;
-	animation-duration: 32s;
+    /* Entrance (once) + seamless shimmer (infinite) — no shared properties */
+    opacity: 0;
+    animation:
+        heroFadeUp 1.2s ease forwards,
+        heroShimmer 15s linear infinite;
 }
 
 .hero-content p {
-	font-size: 1rem;
-	font-family: var(--font-primary);
-	text-align: center;
+    font-size: 1.25rem;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    opacity: 0;
+    animation: heroFadeUp 1.2s ease 0.4s forwards;
 }
+
+/* ── Entrance: fade up + translate — opacity/transform ONLY ── */
+@keyframes heroFadeUp {
+    0%   { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Seamless shimmer sweep — background-position ONLY ── */
+/* 0% → 200% loops cleanly: same gradient at both ends, no visible jump */
+@keyframes heroShimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 300% center; }
+}
+
+.searchlights {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.searchlight {
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    transform-origin: bottom center;
+    background-image: url("/src/assets/images/backgrounds/searchlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-50%) rotate(-45deg);
+    animation: animateSearchlights ease-in-out infinite reverse;
+    opacity: 0.5;
+}
+
+@keyframes animateSearchlights {
+    0%   { transform: translateX(-50%) rotate(-45deg); opacity: 0.5; }
+    50%  { transform: translateX(-50%) rotate(45deg);  opacity: 0.8; }
+    100% { transform: translateX(-50%) rotate(-45deg); opacity: 0.5; }
+}
+
+.searchlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: 10px;
+    background-image: linear-gradient(to bottom, var(--color-primary), transparent);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.searchlight::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: 0 0 20px var(--color-accent);
+}
+
+.searchlight.sl-01 { bottom: 0; left: 20%; animation-delay: 0s;    animation-duration: 12s;   }
+.searchlight.sl-02 { bottom: 0; left: 40%; animation-delay: 1s;    animation-duration: 11s;   }
+.searchlight.sl-03 { bottom: 0; left: 60%; animation-delay: 0.5s;  animation-duration: 11.5s; }
+.searchlight.sl-04 { bottom: 0; left: 80%; animation-delay: 0.8s;  animation-duration: 10.8s; }
 
 .hero-btn {
-	margin-top: 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: heroFadeUp 1.2s ease 0.7s forwards;
 }
 
+.hero-btn button {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    background: var(--color-accent);
+    color: var(--background);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
+.hero-btn button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(50, 221, 208, 0.3);
+    background: var(--color-primary);
+    color: var(--background);
+}
+
+.hero-btn .btn-container a:hover {
+    background: transparent;
+}
+
+.hero-btn button:active { transform: translateY(0); }
+
 @media screen and (max-width: 768px) {
-	.hero-content {
-		padding: 0.5rem;
-		bottom: 5rem;
-	}
+    .hero-content { padding: 1rem; bottom: 3rem; }
+    .hero-content h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .hero-content p  { font-size: 1rem; margin-bottom: 1.5rem; }
 }

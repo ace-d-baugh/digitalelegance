@@ -1,1 +1,150 @@
-/* components/Resume/Work/Work.css */
+/* components/Resume/Work/Work.css - Dark Art Deco Timeline */
+
+.Work {
+    position: relative;
+}
+
+.Work .resume-section-heading {
+    font-family: var(--font-emphasis);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-icon {
+    color: var(--color-accent);
+}
+
+.work-timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 0.6rem;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--color-accent), rgba(50, 221, 208, 0.1));
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-entry:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.55rem;
+    top: 1.2rem;
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    line-height: 1;
+    background: var(--background);
+    padding: 2px 0;
+}
+
+.job-card {
+    background: rgba(50, 221, 208, 0.04);
+    border: 1px solid rgba(50, 221, 208, 0.12);
+    border-left: 3px solid var(--color-accent);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.job-card:hover {
+    background: rgba(50, 221, 208, 0.08);
+    border-color: rgba(50, 221, 208, 0.3);
+    transform: translateX(4px);
+}
+
+.job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.job-dates {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+.job-location {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--color-primary);
+    opacity: 0.5;
+    letter-spacing: 0.05rem;
+}
+
+.job-title {
+    font-family: var(--font-primary);
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.05rem;
+}
+
+.job-employer {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    opacity: 0.85;
+}
+
+.job-responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.job-responsibilities li {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    line-height: 1.7;
+    opacity: 0.8;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.resp-bullet {
+    color: var(--color-accent);
+    font-size: 1rem;
+    line-height: 1.7;
+    flex-shrink: 0;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .work-timeline { padding-left: 2rem; }
+    .timeline-dot { left: -1.55rem; }
+    .job-card { padding: 1.25rem; }
+    .job-title { font-size: 1rem; }
+    .job-card-header { flex-direction: column; align-items: flex-start; }
+}

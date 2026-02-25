@@ -1,1 +1,239 @@
-/* pages/NotFound/NotFound.css */
+/* pages/NotFound/NotFound.css - Art Deco 404 */
+
+.NotFound {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+/* Outer container with art deco double border */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 600px;
+    width: 100%;
+    padding: 3rem 3rem 2.5rem;
+    position: relative;
+    /* Double-line art deco border */
+    border: 2px solid var(--metal-darker);
+    outline: 1px solid var(--metal-darker);
+    outline-offset: -8px;
+    box-shadow:
+        inset 0 0 0 8px var(--background),
+        0 0 40px rgba(50, 221, 208, 0.08),
+        0 0 80px rgba(0, 0, 0, 0.5);
+    background-color: var(--background);
+    background-image: url("/src/assets/images/backgrounds/deco-diamonds.svg");
+    background-repeat: repeat;
+    background-size: 50px;
+}
+
+/* Corner accent marks */
+.not-found-container::before,
+.not-found-container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: var(--color-accent);
+    border-style: solid;
+}
+
+.not-found-container::before {
+    top: 6px;
+    left: 6px;
+    border-width: 2px 0 0 2px;
+}
+
+.not-found-container::after {
+    bottom: 6px;
+    right: 6px;
+    border-width: 0 2px 2px 0;
+}
+
+/* Additional corner marks via ornament pseudo */
+.not-found-ornament::before {
+    content: '';
+    display: none;
+}
+
+/* Ornamental divider rows */
+.not-found-ornament {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
+}
+
+.not-found-orn-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--metal-darker),
+        var(--metal-dark)
+    );
+}
+
+.not-found-ornament .not-found-orn-line:last-child {
+    background: linear-gradient(
+        90deg,
+        var(--metal-dark),
+        var(--metal-darker),
+        transparent
+    );
+}
+
+.not-found-orn-diamonds {
+    color: var(--color-accent);
+    font-size: 0.55rem;
+    letter-spacing: 0.3rem;
+    flex-shrink: 0;
+}
+
+/* Eyebrow text */
+.not-found-eyebrow {
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: var(--metal-dark);
+}
+
+/* Giant 404 */
+.not-found-code {
+    font-family: var(--font-emphasis);
+    font-size: clamp(5rem, 18vw, 8rem);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.2rem;
+    background: linear-gradient(
+        135deg,
+        var(--metal-darker) 0%,
+        var(--metal-dark) 20%,
+        var(--metal) 40%,
+        var(--color-accent) 50%,
+        var(--metal) 60%,
+        var(--metal-dark) 80%,
+        var(--metal-darker) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: shimmer404 3s linear infinite;
+    text-shadow: none;
+    margin: 0;
+}
+
+@keyframes shimmer404 {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Rule between 404 and title */
+.not-found-rule {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-accent),
+        transparent
+    );
+}
+
+/* Page Not Found title */
+.not-found-title {
+    font-family: var(--font-emphasis);
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+/* Description text */
+.not-found-text {
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    line-height: 1.7;
+    letter-spacing: 0.05rem;
+    color: var(--metal-dark);
+    text-align: center;
+    max-width: 400px;
+    margin: 0;
+}
+
+/* Return Home button */
+.not-found-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7rem 2rem;
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--background);
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(
+        8px 0%, calc(100% - 8px) 0%,
+        100% 8px, 100% calc(100% - 8px),
+        calc(100% - 8px) 100%, 8px 100%,
+        0% calc(100% - 8px), 0% 8px
+    );
+}
+
+.not-found-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.not-found-btn:hover::before {
+    left: 100%;
+}
+
+.not-found-btn:hover {
+    background: transparent;
+    color: var(--color-accent);
+    box-shadow: 0 0 20px rgba(50, 221, 208, 0.3);
+}
+
+.not-found-btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .not-found-container {
+        padding: 2rem 1.5rem 2rem;
+    }
+
+    .not-found-code {
+        font-size: 5rem;
+    }
+
+    .not-found-title {
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+    }
+}

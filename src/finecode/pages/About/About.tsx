@@ -1,50 +1,309 @@
 // pages/About/About.tsx
 
-import './About.css'
+import './About.css';
 
 function About() {
     return (
         <div className="About">
-            <div>
+            <div className="about-hero">
                 <h1>About</h1>
-                <h3>Introduction</h3>
-                <p>As a full-stack web developer with a Bachelor's degree in Web Development and certifications in Mobile Application Development and Internet Marketing, I specialize in creating dynamic web and mobile applications. My experience includes working on a high-profile project for the Walt Disney Company. Additionally, my certifications in mobile app development and internet marketing enable me to deliver comprehensive solutions that drive user engagement and business growth. I am passionate about leveraging technology to create impactful applications and am committed to continuous learning and innovation.</p>
-                <h3>Professional Journey</h3>
-                <p>My journey into technology began with a deep curiosity about how digital experiences are crafted. This interest led me to earn a Bachelor's degree in Web Development, where I focused on full-stack development with an emphasis on Angular. Throughout my studies, I cultivated a solid foundation in both front-end and back-end technologies, enabling me to build scalable, user-centered applications.</p>
-                <p>Furthering my education, I obtained certifications in Mobile Application Development and Internet Marketing. These credentials complement my development skills with a broader understanding of user behavior, digital engagement strategies, and cross-platform integration.</p>
-                <p>Over the years, I’ve applied my skills in various professional and freelance capacities, most notably contributing to a high-profile internal project for the Walt Disney Company. This opportunity sharpened my ability to collaborate under pressure, adhere to brand standards, and solve complex technical problems in real-time.</p>
-                <h3>Projects & Achievements</h3>
-                <p>Throughout my career, I’ve taken great pride in delivering high-quality solutions that are both technically sound and user-focused. A few highlights include:</p>
-                <ul>
-                    <li><strong>Disney Internal Tools:</strong> Contributed to a suite of internal applications used by Walt Disney Company cast members. My work focused on Angular development, secure API integration, and enhancing user interface performance—helping streamline operations in a high-stakes environment.</li>
-                    <li><strong>Mobile App Prototypes:</strong> Designed and developed mobile-friendly web application prototypes that allowed clients to visualize cross-platform functionality early in the development process, facilitating stakeholder buy-in and faster iterations.</li>
-                </ul>
-                <p>In addition to project work, I’ve been honored to receive several professional and academic recognitions:</p>
-                <ul>
-                    <li><strong>Dean’s List Honoree:</strong> Awarded for academic excellence during my web development degree program, reflecting consistent performance and commitment to mastery.</li>
-                    <li><strong>Peer & Client Acknowledgments:</strong>Frequently recognized by colleagues, supervisors, and customers for professionalism, clear communication, and going above and beyond in both technical and customer-facing roles.</li>
-                </ul>
-                <p>These achievements reinforce my dedication to quality, teamwork, and continuous improvement—principles I carry into every collaboration.</p>
-                <h3>Skills & Expertise</h3>
-                <ul>
-                    <li><strong>Front-End Development:</strong> Angular, TypeScript, Bootstrap, CSS, HTML, JavaScript</li>
-                    <li><strong>Back-End:</strong> Node.js, Express, .NET Core (C#), RESTful APIs</li>
-                    <li><strong>Databases:</strong> Firebase, MongoDB, SQL Server</li>
-                    <li><strong>Mobile Development:</strong> Hybrid frameworks, responsive design, progressive web apps</li>
-                    <li><strong>Dev Tools:</strong> Git, Visual Studio Code, Postman, Jira, Figma</li>
-                    <li><strong>Marketing & Optimization:</strong> SEO, analytics integration, landing page optimization, A/B testing</li>
-                    <li><strong>Soft Skills:</strong> Client communication, adaptability, time management, remote collaboration</li>
-                </ul>
-                <p>My ability to navigate both code and communication allows me to serve as a bridge between technical teams and client goals.</p>
-                <h3>Values & Mission</h3>
-                <p>At the core of my work is a belief that technology should be intuitive, purposeful, and accessible. I aim to create experiences that not only function well but also empower users to accomplish their goals more efficiently.</p>
-                <p>I hold true to principles of integrity, lifelong learning, and service—values that inform both my personal and professional life. Whether I’m writing code, mentoring others, or learning a new tool, I’m driven by a desire to contribute meaningfully to teams and communities.</p>
-                <h3>Personal Touch</h3>
-                <p>Beyond the world of code, I enjoy exploring creativity through photography, origami, and 3D printing. Each hobby challenges me to think in different dimensions—whether it's capturing a perfect shot, folding precision into paper, or designing practical prints that come to life layer by layer. These interests fuel my problem-solving mindset and eye for design.</p>
-                <p>Travel is another passion of mine. It broadens my perspective, introduces me to new cultures, and reminds me of the importance of adaptability and curiosity—qualities I bring into every project I work on. Whether I’m guiding guests at Walt Disney World or building web applications, I strive to create meaningful, lasting experiences.</p>
+                <div className="about-title-ornament">
+                    <span className="ornament-line"></span>
+                    <span className="ornament-diamond">◆</span>
+                    <span className="ornament-label">Ace Baugh</span>
+                    <span className="ornament-diamond">◆</span>
+                    <span className="ornament-line"></span>
+                </div>
             </div>
+
+            {/* Introduction */}
+            <section className="about-section about-intro">
+                <div className="section-header">
+                    <span className="section-header-line"></span>
+                    <h3>Introduction</h3>
+                    <span className="section-header-line"></span>
+                </div>
+                <div className="intro-card">
+                    <p>
+                        As a full-stack web developer with a Bachelor&apos;s degree in Web Development
+                        and certifications in Mobile Application Development and Digital Marketing,
+                        I specialize in creating dynamic web and mobile applications. My experience
+                        includes working on a high-profile project for the Walt Disney Company.
+                        I am passionate about leveraging technology to create impactful applications
+                        and committed to continuous learning and innovation.
+                    </p>
+                    <p>
+                        My ability to navigate both code and communication allows me to serve as a
+                        bridge between technical teams and client goals — delivering solutions that
+                        are technically sound, user-focused, and visually compelling.
+                    </p>
+                </div>
+            </section>
+
+            <div className="deco-divider"><span className="deco-divider-inner">◆</span></div>
+
+            {/* Professional Journey */}
+            <section className="about-section about-journey">
+                <div className="section-header">
+                    <span className="section-header-line"></span>
+                    <h3>Professional Journey</h3>
+                    <span className="section-header-line"></span>
+                </div>
+                <div className="journey-timeline">
+                    <div className="timeline-item">
+                        <div className="timeline-marker">
+                            <span className="timeline-dot">◆</span>
+                            <span className="timeline-date">08 / 2023</span>
+                        </div>
+                        <div className="timeline-content">
+                            <h4>Bachelor&apos;s of Science in Web Development</h4>
+                            <p className="timeline-institution">Bellevue University &mdash; Bellevue, Nebraska</p>
+                            <p>Focused on full-stack development with an emphasis on Angular. Built a solid foundation in front-end and back-end technologies, enabling me to create scalable, user-centered applications.</p>
+                            <div className="timeline-accolades">
+                                <span className="accolade">◆ Summa Cum Laude</span>
+                                <span className="accolade">◆ Dean&apos;s List</span>
+                                <span className="accolade">◆ GPA: 4.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="timeline-item">
+                        <div className="timeline-marker">
+                            <span className="timeline-dot">◆</span>
+                            <span className="timeline-date">12 / 2020</span>
+                        </div>
+                        <div className="timeline-content">
+                            <h4>Mobile Application Development Certificate</h4>
+                            <p className="timeline-institution">Wilmington University &mdash; Wilmington, Delaware</p>
+                            <p>Deepened expertise in cross-platform mobile development, responsive design, and progressive web application architecture.</p>
+                            <div className="timeline-accolades">
+                                <span className="accolade">◆ Dean&apos;s List</span>
+                                <span className="accolade">◆ GPA: 4.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="timeline-item">
+                        <div className="timeline-marker">
+                            <span className="timeline-dot">◆</span>
+                            <span className="timeline-date">09 / 2020</span>
+                        </div>
+                        <div className="timeline-content">
+                            <h4>Digital Marketing Certificate</h4>
+                            <p className="timeline-institution">Wilmington University &mdash; Wilmington, Delaware</p>
+                            <p>Gained expertise in SEO, digital analytics, landing page optimization, and A/B testing — enabling comprehensive solutions that drive both engagement and business growth.</p>
+                            <div className="timeline-accolades">
+                                <span className="accolade">◆ Dean&apos;s List</span>
+                                <span className="accolade">◆ GPA: 4.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="timeline-item">
+                        <div className="timeline-marker">
+                            <span className="timeline-dot">◆</span>
+                            <span className="timeline-date">Featured</span>
+                        </div>
+                        <div className="timeline-content">
+                            <h4>Walt Disney Company — Internal Tools Project</h4>
+                            <p className="timeline-institution">High-Profile Enterprise Engagement</p>
+                            <p>Contributed to a suite of internal applications used by Walt Disney Company cast members. Focused on Angular development, secure API integration, and UI performance — streamlining operations in a high-stakes, brand-critical environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className="deco-divider"><span className="deco-divider-inner">◆</span></div>
+
+            {/* Projects & Achievements */}
+            <section className="about-section about-achievements">
+                <div className="section-header">
+                    <span className="section-header-line"></span>
+                    <h3>Projects &amp; Achievements</h3>
+                    <span className="section-header-line"></span>
+                </div>
+                <div className="achievements-grid">
+                    <div className="achievement-card">
+                        <i className="achievement-icon nf nf-fa-magic"></i>
+                        <h4>Disney Internal Tools</h4>
+                        <p>Contributed to enterprise Angular applications used by Walt Disney Company cast members — focusing on secure API integration and UI performance in a high-stakes environment.</p>
+                    </div>
+                    <div className="achievement-card">
+                        <i className="achievement-icon nf nf-fa-mobile"></i>
+                        <h4>Mobile App Prototypes</h4>
+                        <p>Designed and developed mobile-friendly web application prototypes enabling clients to visualize cross-platform functionality early, facilitating stakeholder buy-in and faster iterations.</p>
+                    </div>
+                    <div className="achievement-card">
+                        <i className="achievement-icon nf nf-fa-graduation_cap"></i>
+                        <h4>Dean&apos;s List Honoree</h4>
+                        <p>Awarded for academic excellence across multiple programs — earning Summa Cum Laude distinction and a 4.0 GPA, reflecting consistent commitment to mastery.</p>
+                    </div>
+                    <div className="achievement-card">
+                        <i className="achievement-icon nf nf-fa-star"></i>
+                        <h4>Peer &amp; Client Recognition</h4>
+                        <p>Consistently recognized by colleagues, supervisors, and clients for professionalism, clear communication, and dedication to delivering beyond expectations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div className="deco-divider"><span className="deco-divider-inner">◆</span></div>
+
+            {/* Skills & Expertise */}
+            <section className="about-section about-skills">
+                <div className="section-header">
+                    <span className="section-header-line"></span>
+                    <h3>Skills &amp; Expertise</h3>
+                    <span className="section-header-line"></span>
+                </div>
+                <div className="skills-grid">
+                    <div className="skill-card">
+                        <i className="skill-icon nf nf-fa-code"></i>
+                        <h4>Front-End</h4>
+                        <ul>
+                            <li>Angular &amp; React</li>
+                            <li>TypeScript &amp; JavaScript (ES6+)</li>
+                            <li>HTML5 &amp; CSS3</li>
+                            <li>Component-Based Architecture</li>
+                            <li>Responsive &amp; Accessible Design</li>
+                        </ul>
+                    </div>
+                    <div className="skill-card">
+                        <i className="skill-icon nf nf-fa-server"></i>
+                        <h4>Back-End</h4>
+                        <ul>
+                            <li>Node.js &amp; Express</li>
+                            <li>RESTful API Design</li>
+                            <li>SOAP &amp; API Integration</li>
+                            <li>Web Security &amp; Auth</li>
+                            <li>Server Management</li>
+                        </ul>
+                    </div>
+                    <div className="skill-card">
+                        <i className="skill-icon nf nf-fa-database"></i>
+                        <h4>Databases</h4>
+                        <ul>
+                            <li>MongoDB &amp; Firebase</li>
+                            <li>SQL Server</li>
+                            <li>NoSQL Strategies</li>
+                            <li>Database Management</li>
+                            <li>MERN / MEAN Stack</li>
+                        </ul>
+                    </div>
+                    <div className="skill-card">
+                        <i className="skill-icon nf nf-fa-mobile"></i>
+                        <h4>Mobile</h4>
+                        <ul>
+                            <li>Hybrid Frameworks</li>
+                            <li>Progressive Web Apps</li>
+                            <li>Cross-Platform Design</li>
+                            <li>Responsive Layouts</li>
+                            <li>Mobile Prototyping</li>
+                        </ul>
+                    </div>
+                    <div className="skill-card">
+                        <i className="skill-icon nf nf-dev-git"></i>
+                        <h4>Dev Tools</h4>
+                        <ul>
+                            <li>Git &amp; GitHub</li>
+                            <li>Agile / Scrum / Jira</li>
+                            <li>Unit Testing &amp; TDD</li>
+                            <li>Browser DevTools</li>
+                            <li>Figma &amp; Postman</li>
+                        </ul>
+                    </div>
+                    <div className="skill-card">
+                        <i className="skill-icon nf nf-fa-line_chart"></i>
+                        <h4>Marketing</h4>
+                        <ul>
+                            <li>SEO Optimization</li>
+                            <li>Analytics Integration</li>
+                            <li>A/B Testing</li>
+                            <li>Landing Page Optimization</li>
+                            <li>Digital Strategy</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div className="deco-divider"><span className="deco-divider-inner">◆</span></div>
+
+            {/* Values & Mission */}
+            <section className="about-section about-values">
+                <div className="section-header">
+                    <span className="section-header-line"></span>
+                    <h3>Values &amp; Mission</h3>
+                    <span className="section-header-line"></span>
+                </div>
+                <div className="values-quote">
+                    <p>
+                        Technology should be intuitive, purposeful, and accessible. I aim to create
+                        experiences that not only function well but empower users to accomplish their
+                        goals more efficiently.
+                    </p>
+                    <p>
+                        I hold true to principles of integrity, lifelong learning, and service —
+                        values that inform both my personal and professional life. Whether writing
+                        code, mentoring others, or learning a new tool, I&apos;m driven by a desire
+                        to contribute meaningfully to teams and communities.
+                    </p>
+                </div>
+                <div className="values-pillars">
+                    <div className="value-pillar">
+                        <span className="pillar-symbol">◆</span>
+                        <h4>Integrity</h4>
+                        <p>Honest, transparent communication in every collaboration.</p>
+                    </div>
+                    <div className="value-pillar">
+                        <span className="pillar-symbol">◆</span>
+                        <h4>Mastery</h4>
+                        <p>Continuous learning and pursuit of excellence in craft.</p>
+                    </div>
+                    <div className="value-pillar">
+                        <span className="pillar-symbol">◆</span>
+                        <h4>Service</h4>
+                        <p>Building solutions that genuinely improve people&apos;s lives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div className="deco-divider"><span className="deco-divider-inner">◆</span></div>
+
+            {/* Personal Touch */}
+            <section className="about-section about-personal">
+                <div className="section-header">
+                    <span className="section-header-line"></span>
+                    <h3>Personal Touch</h3>
+                    <span className="section-header-line"></span>
+                </div>
+                <p className="personal-intro">
+                    Beyond the world of code, creativity and curiosity fuel my problem-solving
+                    mindset and eye for design.
+                </p>
+                <div className="hobbies-grid">
+                    <div className="hobby-card">
+                        <i className="hobby-icon nf nf-fa-camera"></i>
+                        <h4>Photography</h4>
+                        <p>Capturing light, composition, and the perfect decisive moment.</p>
+                    </div>
+                    <div className="hobby-card">
+                        <i className="hobby-icon nf nf-fa-scissors"></i>
+                        <h4>Origami</h4>
+                        <p>Folding precision and geometry into elegant paper structures.</p>
+                    </div>
+                    <div className="hobby-card">
+                        <i className="hobby-icon nf nf-fa-cube"></i>
+                        <h4>3D Printing</h4>
+                        <p>Designing and fabricating functional objects layer by layer.</p>
+                    </div>
+                    <div className="hobby-card">
+                        <i className="hobby-icon nf nf-fa-compass"></i>
+                        <h4>Travel</h4>
+                        <p>Exploring cultures and broadening perspective across the world.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
 
-export default About
+export default About;

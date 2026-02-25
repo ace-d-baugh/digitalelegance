@@ -1,5 +1,317 @@
 /* pages/Contact/Contact.css */
 
 .Contact {
-    padding: .5rem 0;
+    padding: 3rem 1rem;
+    background: var(--background);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* ── Header ── */
+.contact-header {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-overline {
+    font-family: var(--font-emphasis);
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contact-header h2 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(
+        135deg,
+        var(--metal-darker) 0%,
+        var(--metal) 35%,
+        var(--color-accent) 50%,
+        var(--metal) 65%,
+        var(--metal-darker) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: contactShimmer 3s linear infinite;
+}
+
+@keyframes contactShimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Meta info row */
+.contact-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+    color: var(--metal-dark);
+}
+
+.contact-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.contact-meta-icon {
+    color: var(--color-accent);
+    font-size: 0.9rem;
+}
+
+.contact-meta-sep {
+    color: var(--color-accent);
+    font-size: 0.5rem;
+    opacity: 0.5;
+}
+
+/* ── Form Card — Frame container ── */
+.contact-form-card {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding: 24px;          /* matches Frame --border-width: 24px */
+    box-sizing: border-box;
+}
+
+/* Frame SVG scoping for contact form card — light SVGs (form card is dark bg, so light frames) */
+.contact-form-card > .frame-container .top-left     { background-image: url("/src/assets/images/frames/top-start-photo.svg"); }
+.contact-form-card > .frame-container .top-center   { background-image: url("/src/assets/images/frames/top-photo.svg"); }
+.contact-form-card > .frame-container .top-right    { background-image: url("/src/assets/images/frames/top-end-photo.svg"); }
+.contact-form-card > .frame-container .left-center  { background-image: url("/src/assets/images/frames/start-photo.svg"); }
+.contact-form-card > .frame-container .right-center { background-image: url("/src/assets/images/frames/end-photo.svg"); }
+.contact-form-card > .frame-container .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo.svg"); }
+.contact-form-card > .frame-container .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo.svg"); }
+.contact-form-card > .frame-container .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo.svg"); }
+/* ── Contact Submit Button Frame SVGs — default -bk, hover regular ── */
+.contact-submit-btn .top-left     { background-image: url("/src/assets/images/frames/top-start-photo-bk.svg"); }
+.contact-submit-btn .top-center   { background-image: url("/src/assets/images/frames/top-photo-bk.svg"); }
+.contact-submit-btn .top-right    { background-image: url("/src/assets/images/frames/top-end-photo-bk.svg"); }
+.contact-submit-btn .left-center  { background-image: url("/src/assets/images/frames/start-photo-bk.svg"); }
+.contact-submit-btn .right-center { background-image: url("/src/assets/images/frames/end-photo-bk.svg"); }
+.contact-submit-btn .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo-bk.svg"); }
+.contact-submit-btn .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo-bk.svg"); }
+.contact-submit-btn .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo-bk.svg"); }
+
+.contact-submit-btn:hover .top-left     { background-image: url("/src/assets/images/frames/top-start-photo.svg"); }
+.contact-submit-btn:hover .top-center   { background-image: url("/src/assets/images/frames/top-photo.svg"); }
+.contact-submit-btn:hover .top-right    { background-image: url("/src/assets/images/frames/top-end-photo.svg"); }
+.contact-submit-btn:hover .left-center  { background-image: url("/src/assets/images/frames/start-photo.svg"); }
+.contact-submit-btn:hover .right-center { background-image: url("/src/assets/images/frames/end-photo.svg"); }
+.contact-submit-btn:hover .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo.svg"); }
+.contact-submit-btn:hover .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo.svg"); }
+.contact-submit-btn:hover .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo.svg"); }
+
+
+/* The actual form inside the frame card */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 2.5rem;
+    position: relative;
+}
+
+/* Side-by-side Name + Email row */
+.contact-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 0;
+}
+
+.contact-form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-group label {
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.14);
+    border: none;
+    border-bottom: 1px solid var(--metal-darker);
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: var(--color-primary);
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    outline: none;
+}
+
+.contact-form-group input::placeholder,
+.contact-form-group textarea::placeholder {
+    color: var(--metal-darker);
+    font-size: 0.9rem;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+    border-bottom-color: var(--color-accent);
+    background: rgba(50, 221, 208, 0.03);
+}
+
+.contact-form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+    border: none;
+    border-bottom: 1px solid var(--metal-darker);
+}
+
+/* ── Submit Button ── */
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* btn-container already handles Frame SVG rules via Button.css */
+.contact-submit-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1rem 0;
+}
+
+/* <button type="submit"> matches .btn-container a styling */
+.contact-submit-btn button {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background: var(--color-accent);
+    color: var(--background);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    clip-path: polygon(
+        10px 0%,
+        calc(100% - 10px) 0%,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0% calc(100% - 10px),
+        0% 10px
+    );
+}
+
+/* Shimmer sweep */
+.contact-submit-btn button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+    transition: left 0.5s ease;
+    pointer-events: none;
+}
+
+.contact-submit-btn button:hover::before { left: 100%; }
+
+.contact-submit-btn button:hover {
+    background: var(--background);
+    color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(50,221,208,0.4), 0 0 30px rgba(50,221,208,0.1);
+}
+
+.contact-submit-btn button:active { transform: translateY(0); }
+
+.contact-submit-btn button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* ── Validation States ── */
+.contact-form-group input.input-error,
+.contact-form-group textarea.input-error {
+    border-bottom-color: #dd0032 !important;
+    box-shadow: inset 0 -1px 0 #dd0032;
+}
+
+.contact-form-group input.input-success,
+.contact-form-group textarea.input-success {
+    border-bottom-color: var(--color-accent) !important;
+    box-shadow: inset 0 -1px 0 var(--color-accent);
+}
+
+.error-text {
+    display: block;
+    color: #dd0032;
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    letter-spacing: 0.08rem;
+    margin-top: 0.3rem;
+}
+
+.form-message {
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.form-message.error {
+    background: rgba(221,0,50,0.08);
+    border: 1px solid #dd0032;
+    color: #dd0032;
+    clip-path: polygon(6px 0%, calc(100% - 6px) 0%, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0% calc(100% - 6px), 0% 6px);
+}
+
+.form-message.success {
+    background: rgba(50,221,208,0.08);
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    clip-path: polygon(6px 0%, calc(100% - 6px) 0%, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0% calc(100% - 6px), 0% 6px);
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 768px) {
+    .Contact { padding: 3rem 1rem; gap: 2rem; }
+    .contact-header h2 { font-size: 2rem; }
+    .contact-meta-row { font-size: 0.75rem; gap: 0.75rem; }
+    .contact-meta-sep { display: none; }
+    .contact-form-row { grid-template-columns: 1fr; }
+    .contact-form { padding: 1.5rem; }
+    .contact-form-card { padding: 24px 0.5rem; }
+    .contact-submit-btn button { padding: 1.25rem 2rem; }
 }

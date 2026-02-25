@@ -1,15 +1,21 @@
-/* App.css or global.css */
+/* App.css */
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
-  margin: 0 auto; /* Center the content horizontally */
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
   text-align: center;
 }
 
 .Routes {
-  flex: 1; /* Take up remaining space */
-  margin-top: 4rem;
+  flex: 1;
+  margin-top: 6rem;
+}
+
+/* Homepage: Hero fills full viewport, no top margin offset needed */
+.Routes.home-route {
+  margin-top: 0;
 }
 
 h2 {
@@ -19,8 +25,130 @@ h2 {
     font-size: 1.75rem;
 }
 
+/* ======================================
+   Art Deco Section Dividers
+   ====================================== */
+
+/* Diamond divider: ─── ◆ ─── */
+.deco-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
+    gap: 1rem;
+}
+
+.deco-divider::before,
+.deco-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--metal-darker),
+        var(--metal-dark)
+    );
+}
+
+.deco-divider::after {
+    background: linear-gradient(
+        90deg,
+        var(--metal-dark),
+        var(--metal-darker),
+        transparent
+    );
+}
+
+.deco-divider-inner {
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    letter-spacing: 0.4rem;
+    user-select: none;
+}
+
+/* Chevron divider: ──>> ◆ <<── */
+.deco-divider-chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
+    gap: 0.5rem;
+}
+
+.deco-divider-chevron::before,
+.deco-divider-chevron::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--metal-darker),
+        var(--metal-dark)
+    );
+}
+
+.deco-divider-chevron::after {
+    background: linear-gradient(
+        90deg,
+        var(--metal-dark),
+        var(--metal-darker),
+        transparent
+    );
+}
+
+.deco-divider-chevron-inner {
+    color: var(--color-accent);
+    font-size: 0.65rem;
+    flex-shrink: 0;
+    letter-spacing: 0.2rem;
+    user-select: none;
+}
+
+/* Wide full-bleed section divider */
+.deco-section-divider {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin: 3rem 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--metal-darker) 5%,
+        var(--color-accent) 30%,
+        var(--metal) 50%,
+        var(--color-accent) 70%,
+        var(--metal-darker) 95%,
+        transparent 100%
+    );
+}
+
+.deco-section-divider::before {
+    content: '◆';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background);
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    padding: 0 1rem;
+    line-height: 1;
+}
+
 @media screen and (max-width: 768px) {
   .Routes {
     margin-top: 6rem;
+  }
+  .Routes.home-route {
+    margin-top: 0;
   }
 }

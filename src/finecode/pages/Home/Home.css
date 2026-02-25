@@ -1,1 +1,9 @@
 /* pages/Home/Home.css */
+
+.Home .contact-header h2 {
+    display: none;
+}
+
+.Home .contact-meta-row {
+    padding-top: 1rem;
+}
