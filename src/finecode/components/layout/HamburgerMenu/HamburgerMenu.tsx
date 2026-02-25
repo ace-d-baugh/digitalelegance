@@ -37,27 +37,22 @@ aria-expanded={isOpen}
 <div className={`hamburger-links-container ${dropdownAbove ? 'dropdown-above' : 'dropdown-below'}`}>
 <ul className="hamburger-links">
 <li>
-<NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
+<NavLink to="/finecode/about" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
 <i className="nf nf-oct-person_fill" /> <span>About</span>
 </NavLink>
 </li>
 <li>
-<NavLink to="/portfolio" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
+<NavLink to="/finecode/portfolio" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
 <i className="nf nf-oct-briefcase" /> <span>Portfolio</span>
 </NavLink>
 </li>
 <li>
-<NavLink to="/resume" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
+<NavLink to="/finecode/resume" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
 <i className="nf nf-oct-log" /> <span>Resum&eacute;</span>
 </NavLink>
 </li>
 <li>
-<NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
-<i className="nf nf-fa-book_journal_whills" /> <span>Blog</span>
-</NavLink>
-</li>
-<li>
-<NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
+<NavLink to="/finecode/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>
 <i className="nf nf-md-email_newsletter" /> <span>Contact</span>
 </NavLink>
 </li>

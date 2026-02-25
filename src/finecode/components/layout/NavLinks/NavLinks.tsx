@@ -8,17 +8,17 @@ return (
 <div className="NavLinks-container">
 <ul className="navbar-links">
 <li>
-<NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
+<NavLink to="/finecode/about" className={({ isActive }) => isActive ? 'active' : ''}>
 <i className="nf nf-oct-person_fill"> <span>About</span></i>
 </NavLink>
 </li>
 <li>
-<NavLink to="/portfolio" className={({ isActive }) => isActive ? 'active' : ''}>
+<NavLink to="/finecode/portfolio" className={({ isActive }) => isActive ? 'active' : ''}>
 <i className="nf nf-oct-briefcase"> <span>Portfolio</span></i>
 </NavLink>
 </li>
 <li>
-<NavLink to="/resume" className={({ isActive }) => isActive ? 'active' : ''}>
+<NavLink to="/finecode/resume" className={({ isActive }) => isActive ? 'active' : ''}>
 <i className="nf nf-oct-log"> <span>Resumé</span></i>
 </NavLink>
 </li>
@@ -33,7 +33,7 @@ className=""
 </NavLink>
 </li>
 <li>
-<NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
+<NavLink to="/finecode/contact" className={({ isActive }) => isActive ? 'active' : ''}>
 <i className="nf nf-md-email_newsletter"> <span>Contact</span></i>
 </NavLink>
 </li>

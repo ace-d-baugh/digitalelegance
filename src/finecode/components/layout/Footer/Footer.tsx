@@ -25,11 +25,11 @@ function Footer({ company }: { company: string }) {
                 {/* Nav Links with diamond separators */}
                 <nav className="footer-nav" aria-label="Footer navigation">
                     <ul className="footer-links">
-                        <li><NavLink to="/about">About</NavLink></li>
+                        <li><NavLink to="/finecode/about">About</NavLink></li>
                         <li className="footer-sep" aria-hidden="true">◆</li>
-                        <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                        <li><NavLink to="/finecode/portfolio">Portfolio</NavLink></li>
                         <li className="footer-sep" aria-hidden="true">◆</li>
-                        <li><NavLink to="/resume">Resum&eacute;</NavLink></li>
+                        <li><NavLink to="/finecode/resume">Resum&eacute;</NavLink></li>
                         <li className="footer-sep" aria-hidden="true">◆</li>
                         <li>
                             <a href="https://medium.com/@ace.d.baugh" target="_blank" rel="noreferrer">
@@ -37,7 +37,7 @@ function Footer({ company }: { company: string }) {
                             </a>
                         </li>
                         <li className="footer-sep" aria-hidden="true">◆</li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
+                        <li><NavLink to="/finecode/contact">Contact</NavLink></li>
                     </ul>
                 </nav>
 

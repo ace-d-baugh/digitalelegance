@@ -63,7 +63,7 @@ function Project() {
                 <div className="not-found-inner">
                     <h1>Project Not Found</h1>
                     <div className="deco-divider"><span className="deco-divider-inner">◆</span></div>
-                    <button className="btn-back" onClick={() => navigate('/portfolio')}>
+                    <button className="btn-back" onClick={() => navigate('/finecode/portfolio')}>
                         ← Back to Portfolio
                     </button>
                 </div>
@@ -168,7 +168,7 @@ function Project() {
                             Live Demo
                         </a>
                     )}
-                    <button className="btn-back" onClick={() => navigate('/portfolio')}>
+                    <button className="btn-back" onClick={() => navigate('/finecode/portfolio')}>
                         ← All Projects
                     </button>
                 </div>
