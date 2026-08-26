@@ -27,8 +27,7 @@ function Portfolio() {
         <div className="Portfolio">
             <h1>Portfolio | Case Studies</h1>
             <div className="project-grid">
-                {Projects.map((project: Project) => (
-                    <Card
+                {Projects.filter((project: Project) => project.title !== "Drag n Drop Selector").map((project: Project) => (                    <Card
                         key={project.id}
                         id={project.id}
                         title={project.title}

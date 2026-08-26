@@ -78,65 +78,6 @@
     100% { background-position: 300% center; }
 }
 
-.searchlights {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 5;
-}
-
-.searchlight {
-    position: absolute;
-    height: 100%;
-    width: 80px;
-    transform-origin: bottom center;
-    background-image: url("/src/assets/images/backgrounds/searchlight.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    transform: translateX(-50%) rotate(-45deg);
-    animation: animateSearchlights ease-in-out infinite reverse;
-    opacity: 0.5;
-}
-
-@keyframes animateSearchlights {
-    0%   { transform: translateX(-50%) rotate(-45deg); opacity: 0.5; }
-    50%  { transform: translateX(-50%) rotate(45deg);  opacity: 0.8; }
-    100% { transform: translateX(-50%) rotate(-45deg); opacity: 0.5; }
-}
-
-.searchlight::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 80px;
-    height: 10px;
-    background-image: linear-gradient(to bottom, var(--color-primary), transparent);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.searchlight::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 16px;
-    height: 16px;
-    background: var(--color-accent);
-    border-radius: 50%;
-    transform: translate(-50%, 50%);
-    box-shadow: 0 0 20px var(--color-accent);
-}
-
-.searchlight.sl-01 { bottom: 0; left: 20%; animation-delay: 0s;    animation-duration: 12s;   }
-.searchlight.sl-02 { bottom: 0; left: 40%; animation-delay: 1s;    animation-duration: 11s;   }
-.searchlight.sl-03 { bottom: 0; left: 60%; animation-delay: 0.5s;  animation-duration: 11.5s; }
-.searchlight.sl-04 { bottom: 0; left: 80%; animation-delay: 0.8s;  animation-duration: 10.8s; }
-
 .hero-btn {
     margin-top: 2rem;
     display: flex;
