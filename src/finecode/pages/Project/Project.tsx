@@ -41,13 +41,18 @@ const techIconMap: Record<string, string> = {
     'PHP':          'devicon-php-plain',
     'C#':           'devicon-csharp-plain',
     '.NET Core':    'devicon-dotnetcore-plain',
-    'Stripe':       'devicon-stripe-plain',
+    'Stripe':       '',   // no devicon — use fallback
     'WordPress':    'devicon-wordpress-plain',
     'WooCommerce':  'devicon-woocommerce-plain',
     'Photoshop':    'devicon-photoshop-plain',
     'Git':          'devicon-git-plain',
     'SoapUI':       '',   // no devicon — use fallback
     'Swagger':      'devicon-swagger-plain',
+    'Tailwind CSS': 'devicon-tailwindcss-plain',
+    'Supabase':     'devicon-supabase-plain',
+    'Vercel':       'devicon-vercel-plain',
+    'Next.js':      'devicon-nextjs-original',
+    'Gemini API':   'devicon-google-plain',
 };
 
 // Custom SVG icons for technologies not in devicon
