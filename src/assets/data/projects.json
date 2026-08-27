@@ -161,7 +161,7 @@
             "lessonsLearned": "Enhanced proficiency in React for dynamic interfaces, WordPress/WooCommerce for e-commerce integration, and applied UX/UI principles to create an engaging portfolio.",
             "extraInfo": ""
         },
-        "technologies": ["React", "Bootstrap", "CSS", "WordPress", "WooCommerce"],
+        "technologies": ["React", "Vite", "Bootstrap", "CSS", "WordPress", "WooCommerce"],
         "imageUrls": [
             "/images/projects/missing.png",
             "/images/projects/missing.png",
@@ -190,7 +190,7 @@
             "/images/projects/liz-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
-        "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",
+        "liveUrl": "https://digitalelegance.com/lizvitation/?n=Demo%20User&g=m",
         "type": "Front-End"
     },
     {

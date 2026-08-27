@@ -51,8 +51,9 @@ const techIconMap: Record<string, string> = {
     'Tailwind CSS': 'devicon-tailwindcss-plain',
     'Supabase':     'devicon-supabase-plain',
     'Vercel':       'devicon-vercel-plain',
-    'Next.js':      'devicon-nextjs-original',
+    'Next.js':      'devicon-nextjs-plain',
     'Gemini API':   'devicon-google-plain',
+    'vite':         'devicon-vitejs-plain',
 };
 
 // Custom SVG icons for technologies not in devicon
